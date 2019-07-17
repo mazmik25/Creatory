@@ -30,7 +30,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-0G-fry" userLabel="Main View">
                                         <rect key="frame" x="0.0" y="0.0" width="517.5" height="414"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="diI-vS-fCK">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="diI-vS-fCK">
                                                 <rect key="frame" x="0.0" y="0.0" width="517.5" height="414"/>
                                             </imageView>
                                         </subviews>
@@ -66,6 +66,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="Ue0-xe-xUe"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="diI-vS-fCK" id="3q2-yL-nHC"/>
                         <outlet property="editView" destination="2yH-7s-mtR" id="cVn-4y-O7T"/>
                     </connections>
                 </viewController>

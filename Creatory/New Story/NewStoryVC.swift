@@ -11,6 +11,7 @@ import UIKit
 class NewStoryVC: BaseVC {
 
     @IBOutlet weak var editView: UIView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,9 @@ class NewStoryVC: BaseVC {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        viewPopup(withViewController: OnceUponVC(), withView: nil, bg: .cyan)
+        let vc = BackgroundVC()
+        vc.delegate = self
+        viewPopup(withViewController: vc, withView: editView, bg: .cyan)
     }
 
 
@@ -31,7 +34,7 @@ extension NewStoryVC: BackgroundVCDelegate {
     
     //change background
     func onBackgroundSelected(name: String) {
-        
+        self.backgroundImageView.image = UIImage(named: name)
     }
     
     
