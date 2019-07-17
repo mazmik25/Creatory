@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Asset" representedClassName="Asset" syncable="YES" codeGenerationType="class">
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="x" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="y" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="pages" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Page" inverseName="assets" inverseEntity="Page" syncable="YES"/>
+    </entity>
+    <entity name="Badge" representedClassName="Badge" syncable="YES" codeGenerationType="class">
+        <attribute name="hasReceived" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="badge" inverseEntity="Story" syncable="YES"/>
+    </entity>
+    <entity name="Page" representedClassName="Page" syncable="YES" codeGenerationType="class">
+        <attribute name="audioPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="background" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="assets" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Asset" inverseName="pages" inverseEntity="Asset" syncable="YES"/>
+    </entity>
+    <entity name="Player" representedClassName="Player" syncable="YES" codeGenerationType="class">
+        <attribute name="character" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="photoPath" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="role" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="story" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Story" inverseName="players" inverseEntity="Story" syncable="YES"/>
+    </entity>
+    <entity name="Story" representedClassName="Story" syncable="YES" codeGenerationType="class">
+        <attribute name="createdAt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hasReviewed" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="review" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoPath" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="badge" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Badge" inverseName="story" inverseEntity="Badge" syncable="YES"/>
+        <relationship name="players" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Player" inverseName="story" inverseEntity="Player" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Asset" positionX="-326.6953125" positionY="-257.65234375" width="128" height="118"/>
+        <element name="Page" positionX="-106.2109375" positionY="-262.05859375" width="128" height="88"/>
+        <element name="Player" positionX="-54" positionY="-9" width="128" height="118"/>
+        <element name="Story" positionX="-515.828125" positionY="12.9765625" width="128" height="165"/>
+        <element name="Badge" positionX="-306" positionY="-108" width="128" height="75"/>
+    </elements>
+</model>

@@ -1,0 +1,6 @@
+framework module Pods_Creatory {
+  umbrella header "Pods-Creatory-umbrella.h"
+
+  export *
+  module * { export * }
+}
