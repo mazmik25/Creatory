@@ -27,3 +27,12 @@ class NewStoryVC: BaseVC {
 
 }
 
+extension NewStoryVC: BackgroundVCDelegate {
+    
+    //change background
+    func onBackgroundSelected(name: String) {
+        
+    }
+    
+    
+}
