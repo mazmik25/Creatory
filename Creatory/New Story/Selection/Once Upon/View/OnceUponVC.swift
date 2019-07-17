@@ -9,17 +9,15 @@
 import UIKit
 
 class OnceUponVC: UIViewController {
-
-    @IBOutlet weak var childView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissVC))
-        childView.addGestureRecognizer(tap)
-        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissView))
+        self.view.addGestureRecognizer(tap)
     }
 
-    @objc func dismissVC() {
-        removeFromParent()
+    @objc func dismissView() {
+        dismissPopup()
     }
 }

@@ -21,10 +21,7 @@ class NewStoryVC: BaseVC {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        
-        let vc = OnceUponVC()
-        
-        self.editView.addSubview(vc.view)
+        viewPopup(withViewController: OnceUponVC(), withView: nil, bg: .cyan)
     }
 
 

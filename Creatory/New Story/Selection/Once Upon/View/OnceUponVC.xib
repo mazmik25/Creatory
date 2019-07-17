@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnceUponVC" customModule="Creatory" customModuleProvider="target">
             <connections>
-                <outlet property="childView" destination="2Xj-cn-BjQ" id="aaS-zN-irs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,38 +20,26 @@
             <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Xj-cn-BjQ">
-                    <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
-                    <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Once Upon A Time . . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BD-ux-4WG">
-                            <rect key="frame" x="290" y="173.5" width="316" height="35"/>
-                            <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
-                            <color key="textColor" red="0.15294117647058825" green="0.54117647058823526" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP TO START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPd-vV-vyW">
-                            <rect key="frame" x="290" y="216.5" width="316" height="21"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
-                    </subviews>
-                    <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <constraints>
-                        <constraint firstItem="8BD-ux-4WG" firstAttribute="centerY" secondItem="2Xj-cn-BjQ" secondAttribute="centerY" constant="-16" id="1e8-Od-Oox"/>
-                        <constraint firstItem="yPd-vV-vyW" firstAttribute="trailing" secondItem="8BD-ux-4WG" secondAttribute="trailing" id="7YL-20-mOg"/>
-                        <constraint firstItem="8BD-ux-4WG" firstAttribute="centerX" secondItem="2Xj-cn-BjQ" secondAttribute="centerX" id="LPf-EX-AW1"/>
-                        <constraint firstItem="yPd-vV-vyW" firstAttribute="top" secondItem="8BD-ux-4WG" secondAttribute="bottom" constant="8" id="diH-QC-WcV"/>
-                        <constraint firstItem="yPd-vV-vyW" firstAttribute="leading" secondItem="8BD-ux-4WG" secondAttribute="leading" id="sgt-UK-43G"/>
-                    </constraints>
-                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Once Upon A Time . . ." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8BD-ux-4WG">
+                    <rect key="frame" x="290" y="173.5" width="316" height="35"/>
+                    <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="30"/>
+                    <color key="textColor" red="0.15294117647058825" green="0.54117647058823526" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TAP TO START" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPd-vV-vyW">
+                    <rect key="frame" x="290" y="208.5" width="316" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="trailing" secondItem="2Xj-cn-BjQ" secondAttribute="trailing" id="JtI-Sf-5hs"/>
-                <constraint firstAttribute="bottom" secondItem="2Xj-cn-BjQ" secondAttribute="bottom" id="QKg-0X-DRr"/>
-                <constraint firstItem="2Xj-cn-BjQ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RZO-uB-1HF"/>
-                <constraint firstItem="2Xj-cn-BjQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="gFt-lx-Up7"/>
+                <constraint firstItem="8BD-ux-4WG" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="-16" id="Ctl-XR-o7x"/>
+                <constraint firstItem="8BD-ux-4WG" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="VqC-il-F2B"/>
+                <constraint firstItem="yPd-vV-vyW" firstAttribute="leading" secondItem="8BD-ux-4WG" secondAttribute="leading" id="aWT-jY-4p5"/>
+                <constraint firstItem="yPd-vV-vyW" firstAttribute="top" secondItem="8BD-ux-4WG" secondAttribute="bottom" id="exg-5v-n2L"/>
+                <constraint firstItem="yPd-vV-vyW" firstAttribute="trailing" secondItem="8BD-ux-4WG" secondAttribute="trailing" id="mSU-rC-xaa"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
         </view>

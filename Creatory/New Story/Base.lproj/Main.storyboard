@@ -23,14 +23,12 @@
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2yH-7s-mtR">
                                         <rect key="frame" x="517.5" y="0.0" width="378.5" height="414"/>
-                                        <color key="backgroundColor" red="0.99763482810000004" green="0.8433450361" blue="0.169600522" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="2yH-7s-mtR" secondAttribute="height" priority="250" id="1va-I5-2Wq"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-0G-fry">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsZ-0G-fry" userLabel="Main View">
                                         <rect key="frame" x="0.0" y="0.0" width="517.5" height="414"/>
-                                        <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="dsZ-0G-fry" secondAttribute="height" multiplier="1.25" priority="750" id="J3a-ST-ruf"/>
                                         </constraints>
