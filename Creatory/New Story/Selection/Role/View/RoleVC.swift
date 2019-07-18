@@ -49,4 +49,11 @@ extension RoleVC: UICollectionViewDelegate, UICollectionViewDataSource {
         delegate?.onRoleSelected(name: roles[indexPath.row].name)
         self.dismissPopup()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 140.0, height: 80.0)
+    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return CGSize(width: 140.0, height: 80.0)
+//    }
 }

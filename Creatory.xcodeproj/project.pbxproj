@@ -52,6 +52,7 @@
 		4E1982DE22DF250E00DF211F /* Button.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1982DD22DF250E00DF211F /* Button.xcassets */; };
 		4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1982DF22DF38BF00DF211F /* button white.xcassets */; };
 		4E4F5CFD22E01CD90098C6A6 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F5CFC22E01CD90098C6A6 /* ButtonCustom.swift */; };
+		4E4F5D0122E055700098C6A6 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F5D0022E055700098C6A6 /* StickerView.swift */; };
 		A78E515CA91269A24E9B9D62 /* Pods_Creatory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6085C5D2D7DB028F57B2C8 /* Pods_Creatory.framework */; };
 /* End PBXBuildFile section */
 
@@ -105,6 +106,7 @@
 		4E1982DD22DF250E00DF211F /* Button.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Button.xcassets; sourceTree = "<group>"; };
 		4E1982DF22DF38BF00DF211F /* button white.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "button white.xcassets"; sourceTree = "<group>"; };
 		4E4F5CFC22E01CD90098C6A6 /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
+		4E4F5D0022E055700098C6A6 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
 		71A69D6788CB0C021E3B2067 /* Pods-Creatory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creatory.release.xcconfig"; path = "Target Support Files/Pods-Creatory/Pods-Creatory.release.xcconfig"; sourceTree = "<group>"; };
 		E931F524B0B057D49C807DD9 /* Pods-Creatory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creatory.debug.xcconfig"; path = "Target Support Files/Pods-Creatory/Pods-Creatory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 				3217DE5F22E00DF50079E715 /* Cell */,
 				3217DE5522DF2F5F0079E715 /* StickerVC.swift */,
 				3217DE5622DF2F5F0079E715 /* StickerVC.xib */,
+				4E4F5D0022E055700098C6A6 /* StickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -554,6 +557,7 @@
 				3217DE3922DED95C0079E715 /* BackgroundVC.swift in Sources */,
 				3217DE5D22DF301F0079E715 /* Sticker.swift in Sources */,
 				3227F27822DD7DEE00BCC591 /* PreferenceKey.swift in Sources */,
+				4E4F5D0122E055700098C6A6 /* StickerView.swift in Sources */,
 				3217DE4F22DEFE390079E715 /* PreviewVC.swift in Sources */,
 				3227F27A22DD7E9200BCC591 /* CreatoryNC.swift in Sources */,
 				4E4F5CFD22E01CD90098C6A6 /* ButtonCustom.swift in Sources */,

@@ -13,6 +13,8 @@ class StickerCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
     
+    var stickers = [StickerView]()
+    
     static let identifier = "StickerCell"
     var sticker: Sticker! {
         didSet {

@@ -12,6 +12,9 @@ class NewStoryVC: BaseVC {
 
     @IBOutlet weak var editView: UIView!
     @IBOutlet weak var backgroundImageView: UIImageView!
+
+    var stickers = [StickerView]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +66,9 @@ class NewStoryVC: BaseVC {
         
     }
     
-    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
 }
 
 extension NewStoryVC: BackgroundVCDelegate {
@@ -79,7 +84,12 @@ extension NewStoryVC: StickerVCDelegate {
     
     //add sticker to background image view
     func onStickerSelected(name: String) {
-        
+        let sticker = StickerView(frame: CGRect(x: 300, y: 150, width: 60, height: 80))
+        sticker.image = UIImage(named: name)
+        stickers.append(sticker)
+        stickers.forEach { (sticker) in
+            self.backgroundImageView.addSubview(sticker)
+        }
     }
     
 }

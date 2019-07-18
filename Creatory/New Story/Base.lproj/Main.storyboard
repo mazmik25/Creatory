@@ -26,19 +26,22 @@
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button board" translatesAutoresizingMaskIntoConstraints="NO" id="Oig-Fb-6lx">
                                                 <rect key="frame" x="0.0" y="0.0" width="378.5" height="414"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="378.5" id="4vA-SW-AoO"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dxe-as-VTb">
-                                                <rect key="frame" x="19" y="23" width="52" height="52"/>
+                                                <rect key="frame" x="26" y="22" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.99215686270000003" green="0.66274509800000003" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <state key="normal" image="Home"/>
+                                                <state key="normal" image="New home"/>
                                                 <connections>
                                                     <action selector="onHomeSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8AN-OA-HQg"/>
                                                     <action selector="onHomeSelected:" destination="YEM-bI-znS" eventType="touchUpInside" id="gwR-kc-4l5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kIA-yY-geg">
-                                                <rect key="frame" x="163" y="354" width="52" height="52"/>
+                                                <rect key="frame" x="149" y="354" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <size key="titleShadowOffset" width="2" height="3"/>
                                                 <state key="normal" image="new add page"/>
@@ -108,17 +111,17 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTj-oV-4Lk">
-                                                <rect key="frame" x="96" y="354" width="52" height="52"/>
+                                                <rect key="frame" x="89" y="354" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button" image="previous off"/>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bo1-Pr-iJt">
-                                                <rect key="frame" x="234" y="354" width="52" height="52"/>
+                                                <rect key="frame" x="209" y="354" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <state key="normal" title="Button" image="next off"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Page 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CzX-hZ-DdM">
-                                                <rect key="frame" x="163" y="315" width="51" height="21"/>
+                                                <rect key="frame" x="150" y="315" width="51" height="21"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -223,7 +226,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Home" width="308" height="308"/>
+        <image name="New home" width="308" height="308"/>
         <image name="button board" width="341" height="414"/>
         <image name="delete page off" width="300" height="300"/>
         <image name="done" width="308" height="308"/>

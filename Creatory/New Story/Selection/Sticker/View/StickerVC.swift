@@ -103,4 +103,8 @@ extension StickerVC: UICollectionViewDelegate, UICollectionViewDataSource {
         delegate?.onStickerSelected(name: filtered[indexPath.row].name)
         self.dismissPopup()
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 80.0, height: 60.0)
+    }
 }

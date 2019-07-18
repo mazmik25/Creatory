@@ -13,6 +13,7 @@ struct Role {
     
     static func generateRoles() -> [Role] {
         var roles = [Role]()
+        
         roles.append(Role(name: "boy-1"))
         roles.append(Role(name: "boy-2"))
         roles.append(Role(name: "boy-3"))
@@ -29,6 +30,7 @@ struct Role {
         roles.append(Role(name: "girl-6"))
         roles.append(Role(name: "girl-7"))
         roles.append(Role(name: "girl-8"))
+        
         return roles
     }
 }
