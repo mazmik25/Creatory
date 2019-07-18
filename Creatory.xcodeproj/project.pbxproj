@@ -26,6 +26,13 @@
 		3217DE4C22DEF1880079E715 /* RoleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3217DE4A22DEF1880079E715 /* RoleCell.xib */; };
 		3217DE4F22DEFE390079E715 /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE4D22DEFE390079E715 /* PreviewVC.swift */; };
 		3217DE5022DEFE390079E715 /* PreviewVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3217DE4E22DEFE390079E715 /* PreviewVC.xib */; };
+		3217DE5222DF2C3A0079E715 /* Role.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE5122DF2C3A0079E715 /* Role.swift */; };
+		3217DE5422DF2D890079E715 /* Character.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3217DE5322DF2D890079E715 /* Character.xcassets */; };
+		3217DE5722DF2F5F0079E715 /* StickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE5522DF2F5F0079E715 /* StickerVC.swift */; };
+		3217DE5822DF2F5F0079E715 /* StickerVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3217DE5622DF2F5F0079E715 /* StickerVC.xib */; };
+		3217DE5D22DF301F0079E715 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE5C22DF301F0079E715 /* Sticker.swift */; };
+		3217DE6222E00E040079E715 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE6022E00E040079E715 /* StickerCell.swift */; };
+		3217DE6322E00E040079E715 /* StickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3217DE6122E00E040079E715 /* StickerCell.xib */; };
 		3227F26922DD773D00BCC591 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F26822DD773D00BCC591 /* UIView+Extension.swift */; };
 		3227F26E22DD77CF00BCC591 /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F26C22DD77CF00BCC591 /* LibraryVC.swift */; };
 		3227F26F22DD77CF00BCC591 /* LibraryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227F26D22DD77CF00BCC591 /* LibraryVC.xib */; };
@@ -68,6 +75,14 @@
 		3217DE4A22DEF1880079E715 /* RoleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoleCell.xib; sourceTree = "<group>"; };
 		3217DE4D22DEFE390079E715 /* PreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
 		3217DE4E22DEFE390079E715 /* PreviewVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewVC.xib; sourceTree = "<group>"; };
+		3217DE5122DF2C3A0079E715 /* Role.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Role.swift; sourceTree = "<group>"; };
+		3217DE5322DF2D890079E715 /* Character.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Character.xcassets; sourceTree = "<group>"; };
+		3217DE5522DF2F5F0079E715 /* StickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerVC.swift; sourceTree = "<group>"; };
+		3217DE5622DF2F5F0079E715 /* StickerVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickerVC.xib; sourceTree = "<group>"; };
+		3217DE5C22DF301F0079E715 /* Sticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sticker.swift; sourceTree = "<group>"; };
+		3217DE5E22DF36180079E715 /* Testing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Testing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		3217DE6022E00E040079E715 /* StickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
+		3217DE6122E00E040079E715 /* StickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickerCell.xib; sourceTree = "<group>"; };
 		3227F26822DD773D00BCC591 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3227F26C22DD77CF00BCC591 /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
 		3227F26D22DD77CF00BCC591 /* LibraryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryVC.xib; sourceTree = "<group>"; };
@@ -126,8 +141,8 @@
 		3217DE2222DEC9A60079E715 /* Background */ = {
 			isa = PBXGroup;
 			children = (
+				3217DE5922DF2FD60079E715 /* Model */,
 				3217DE2822DEC9EB0079E715 /* View */,
-				3217DE4022DEDE860079E715 /* Background.swift */,
 			);
 			path = Background;
 			sourceTree = "<group>";
@@ -146,6 +161,7 @@
 		3217DE2422DEC9B50079E715 /* Role */ = {
 			isa = PBXGroup;
 			children = (
+				3217DE5A22DF2FE20079E715 /* Model */,
 				3217DE2722DEC9E70079E715 /* View */,
 			);
 			path = Role;
@@ -154,6 +170,7 @@
 		3217DE2522DEC9BA0079E715 /* Sticker */ = {
 			isa = PBXGroup;
 			children = (
+				3217DE5B22DF30180079E715 /* Model */,
 				3217DE2622DEC9C20079E715 /* View */,
 			);
 			path = Sticker;
@@ -162,6 +179,9 @@
 		3217DE2622DEC9C20079E715 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3217DE5F22E00DF50079E715 /* Cell */,
+				3217DE5522DF2F5F0079E715 /* StickerVC.swift */,
+				3217DE5622DF2F5F0079E715 /* StickerVC.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -217,6 +237,40 @@
 			children = (
 				3217DE4922DEF1880079E715 /* RoleCell.swift */,
 				3217DE4A22DEF1880079E715 /* RoleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3217DE5922DF2FD60079E715 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3217DE4022DEDE860079E715 /* Background.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3217DE5A22DF2FE20079E715 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3217DE5122DF2C3A0079E715 /* Role.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3217DE5B22DF30180079E715 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3217DE5C22DF301F0079E715 /* Sticker.swift */,
+				3217DE5E22DF36180079E715 /* Testing.playground */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3217DE5F22E00DF50079E715 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3217DE6022E00E040079E715 /* StickerCell.swift */,
+				3217DE6122E00E040079E715 /* StickerCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -322,6 +376,7 @@
 				32C1303022DD754E0025C69A /* Assets.xcassets */,
 				3217DE2F22DECF420079E715 /* Background.xcassets */,
 				3217DE3322DED0690079E715 /* Badge.xcassets */,
+				3217DE5322DF2D890079E715 /* Character.xcassets */,
 				3217DE3122DED03E0079E715 /* Sticker.xcassets */,
 				32C1303222DD754E0025C69A /* LaunchScreen.storyboard */,
 				32C1303522DD754E0025C69A /* Info.plist */,
@@ -408,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3227F26F22DD77CF00BCC591 /* LibraryVC.xib in Resources */,
+				3217DE6322E00E040079E715 /* StickerCell.xib in Resources */,
 				3217DE3422DED0690079E715 /* Badge.xcassets in Resources */,
 				3217DE3222DED03E0079E715 /* Sticker.xcassets in Resources */,
 				3217DE3F22DEDCCE0079E715 /* BackgroundCell.xib in Resources */,
@@ -420,7 +476,9 @@
 				3217DE2E22DECA480079E715 /* OnceUponVC.xib in Resources */,
 				3217DE3A22DED95C0079E715 /* BackgroundVC.xib in Resources */,
 				3217DE5022DEFE390079E715 /* PreviewVC.xib in Resources */,
+				3217DE5422DF2D890079E715 /* Character.xcassets in Resources */,
 				3227F27F22DD89AF00BCC591 /* LibraryCell.xib in Resources */,
+				3217DE5822DF2F5F0079E715 /* StickerVC.xib in Resources */,
 				3217DE3022DECF420079E715 /* Background.xcassets in Resources */,
 				32C1302C22DD754E0025C69A /* Main.storyboard in Resources */,
 				3217DE4C22DEF1880079E715 /* RoleCell.xib in Resources */,
@@ -477,6 +535,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3217DE4622DEF0730079E715 /* RoleVC.swift in Sources */,
+				3217DE6222E00E040079E715 /* StickerCell.swift in Sources */,
 				3227F27522DD7DDC00BCC591 /* Preference.swift in Sources */,
 				3217DE2D22DECA480079E715 /* OnceUponVC.swift in Sources */,
 				32C1302922DD754E0025C69A /* NewStoryVC.swift in Sources */,
@@ -484,6 +543,7 @@
 				3217DE4322DEE0B10079E715 /* UIViewController+Extension.swift in Sources */,
 				32C1302F22DD754E0025C69A /* Creatory.xcdatamodeld in Sources */,
 				3227F26922DD773D00BCC591 /* UIView+Extension.swift in Sources */,
+				3217DE5222DF2C3A0079E715 /* Role.swift in Sources */,
 				3217DE1E22DEC75B0079E715 /* RadiusType.swift in Sources */,
 				3217DE3E22DEDCCE0079E715 /* BackgroundCell.swift in Sources */,
 				3227F27E22DD89AF00BCC591 /* LibraryCell.swift in Sources */,
@@ -492,10 +552,12 @@
 				3217DE4B22DEF1880079E715 /* RoleCell.swift in Sources */,
 				3217DE4122DEDE860079E715 /* Background.swift in Sources */,
 				3217DE3922DED95C0079E715 /* BackgroundVC.swift in Sources */,
+				3217DE5D22DF301F0079E715 /* Sticker.swift in Sources */,
 				3227F27822DD7DEE00BCC591 /* PreferenceKey.swift in Sources */,
 				3217DE4F22DEFE390079E715 /* PreviewVC.swift in Sources */,
 				3227F27A22DD7E9200BCC591 /* CreatoryNC.swift in Sources */,
 				4E4F5CFD22E01CD90098C6A6 /* ButtonCustom.swift in Sources */,
+				3217DE5722DF2F5F0079E715 /* StickerVC.swift in Sources */,
 				3227F26E22DD77CF00BCC591 /* LibraryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

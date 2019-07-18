@@ -25,8 +25,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="378" height="414"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="sFn-yV-VEs">
-                            <rect key="frame" x="0.0" y="0.0" width="378" height="414"/>
-                            <color key="backgroundColor" red="0.94901960780000005" green="0.88235294119999996" blue="0.88235294119999996" alpha="0.93000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                            <rect key="frame" x="40" y="0.0" width="322" height="414"/>
                             <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="HNr-Wv-98k">
                                 <size key="itemSize" width="50" height="50"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -35,13 +34,13 @@
                             </collectionViewFlowLayout>
                         </collectionView>
                     </subviews>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.88235294119999996" blue="0.88235294119999996" alpha="0.93000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
-                        <constraint firstItem="sFn-yV-VEs" firstAttribute="leading" secondItem="O3E-g7-ZBl" secondAttribute="leading" id="AiA-aq-ahE"/>
+                        <constraint firstItem="sFn-yV-VEs" firstAttribute="leading" secondItem="O3E-g7-ZBl" secondAttribute="leading" constant="40" id="AiA-aq-ahE"/>
                         <constraint firstAttribute="bottom" secondItem="sFn-yV-VEs" secondAttribute="bottom" id="M11-w0-33V"/>
                         <constraint firstItem="sFn-yV-VEs" firstAttribute="top" secondItem="O3E-g7-ZBl" secondAttribute="top" id="ZXQ-eE-97A"/>
                         <constraint firstAttribute="width" constant="378" id="laj-up-Xx6"/>
-                        <constraint firstAttribute="trailing" secondItem="sFn-yV-VEs" secondAttribute="trailing" id="q1s-uZ-WU5"/>
+                        <constraint firstAttribute="trailing" secondItem="sFn-yV-VEs" secondAttribute="trailing" constant="16" id="q1s-uZ-WU5"/>
                     </constraints>
                 </view>
             </subviews>

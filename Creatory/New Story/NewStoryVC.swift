@@ -33,7 +33,7 @@ class NewStoryVC: BaseVC {
     }
     
     @IBAction func onBackgroundSelected(_ sender: Any) {
-        let vc = BackgroundVC()
+        let vc = StickerVC()
         vc.delegate = self
         viewPopup(withViewController: vc, withView: editView)
     }
@@ -72,5 +72,13 @@ extension NewStoryVC: BackgroundVCDelegate {
         self.backgroundImageView.image = UIImage(named: name)
     }
     
+}
+
+extension NewStoryVC: StickerVCDelegate {
+    
+    //add sticker to background image view
+    func onStickerSelected(name: String) {
+        
+    }
     
 }
