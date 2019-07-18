@@ -1,20 +1,24 @@
 PODS:
   - MaterialShowcase (0.6.5)
-  - SwiftVideoGenerator (1.2.6)
+  - SAConfettiView (0.1.8)
+  - SwiftVideoGenerator (1.2.7)
 
 DEPENDENCIES:
   - MaterialShowcase
+  - SAConfettiView
   - SwiftVideoGenerator
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MaterialShowcase
+    - SAConfettiView
     - SwiftVideoGenerator
 
 SPEC CHECKSUMS:
   MaterialShowcase: 031041c8409ab8473740a13e8c37297f78316e96
-  SwiftVideoGenerator: 461ef57a52d1258160ba9d58ed90813c89b192b9
+  SAConfettiView: c87031a2280659261b730fce3669fb10e73636ee
+  SwiftVideoGenerator: 8d1cec02e9c5d48aa5828b5e57873e84eb79d003
 
-PODFILE CHECKSUM: d8ab035ef5d79ddefe4ec5aed1ebb1e6706398e0
+PODFILE CHECKSUM: d0cb7a34d181a61a2a54cf57abf904026a09ea0a
 
 COCOAPODS: 1.7.1

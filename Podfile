@@ -8,5 +8,5 @@ target 'Creatory' do
   # Pods for Creatory
 	pod 'SwiftVideoGenerator'
 	pod 'MaterialShowcase'
-
+  pod 'SAConfettiView'
 end

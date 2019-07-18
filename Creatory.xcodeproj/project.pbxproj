@@ -184,7 +184,6 @@
 				3217DE5F22E00DF50079E715 /* Cell */,
 				3217DE5522DF2F5F0079E715 /* StickerVC.swift */,
 				3217DE5622DF2F5F0079E715 /* StickerVC.xib */,
-				4E4F5D0022E055700098C6A6 /* StickerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -320,6 +319,7 @@
 		3227F27322DD7D4000BCC591 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				4E4F5D0022E055700098C6A6 /* StickerView.swift */,
 				3227F27022DD7C8C00BCC591 /* BaseVC.swift */,
 				3227F27922DD7E9200BCC591 /* CreatoryNC.swift */,
 				3217DE1D22DEC75B0079E715 /* RadiusType.swift */,
@@ -710,7 +710,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = STKR5JMBGH;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,7 +729,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JSB449F8V6;
+				DEVELOPMENT_TEAM = STKR5JMBGH;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

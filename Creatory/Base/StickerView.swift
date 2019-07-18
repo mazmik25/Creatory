@@ -12,7 +12,6 @@ class StickerView: UIImageView {
 
     var lastLocation = CGPoint(x: 0, y: 0)
     
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -22,11 +21,10 @@ class StickerView: UIImageView {
         self.addGestureRecognizer(panRecognizer)
         self.addGestureRecognizer(pinchRecognizer)
         self.isUserInteractionEnabled = true
-        self.superview?.isUserInteractionEnabled = true
+        self.contentMode = .scaleAspectFill
     }
     
     required init?(coder aDecoder: NSCoder) {
-//        fatalError("init(coder:) has not been implemented")
         super.init(coder: aDecoder)
         
     }
