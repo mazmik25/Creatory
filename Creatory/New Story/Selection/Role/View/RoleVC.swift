@@ -47,5 +47,6 @@ extension RoleVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         delegate?.onRoleSelected(name: roles[indexPath.row].name)
+        self.dismissPopup()
     }
 }

@@ -13,9 +13,6 @@ class NewStoryVC: BaseVC {
     @IBOutlet weak var editView: UIView!
     @IBOutlet weak var backgroundImageView: UIImageView!
     
-  
-    
-    //    @IBOutlet weak var testIV: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,17 +30,21 @@ class NewStoryVC: BaseVC {
     }
     
     @IBAction func onBackgroundSelected(_ sender: Any) {
-        let vc = StickerVC()
+        let vc = BackgroundVC()
         vc.delegate = self
         viewPopup(withViewController: vc, withView: editView)
     }
     
     @IBAction func onRoleSelected(_ sender: Any) {
-        
+        let vc = RoleVC()
+        vc.delegate = self
+        viewPopup(withViewController: vc, withView: editView)
     }
     
     @IBAction func onStickerSelected(_ sender: Any) {
-        
+        let vc = StickerVC()
+        vc.delegate = self
+        viewPopup(withViewController: vc, withView: editView)
     }
     
     @IBAction func onRecord1Selected(_ sender: Any) {
@@ -78,6 +79,15 @@ extension NewStoryVC: StickerVCDelegate {
     
     //add sticker to background image view
     func onStickerSelected(name: String) {
+        
+    }
+    
+}
+
+extension NewStoryVC: RolesVCDelegate {
+    
+    //add role to background image view
+    func onRoleSelected(name: String) {
         
     }
     
