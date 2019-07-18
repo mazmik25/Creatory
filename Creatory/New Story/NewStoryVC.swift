@@ -13,21 +13,56 @@ class NewStoryVC: BaseVC {
     @IBOutlet weak var editView: UIView!
     @IBOutlet weak var backgroundImageView: UIImageView!
     
+  
+    
+    //    @IBOutlet weak var testIV: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         Preference.set(value: false, forKey: .isFirstTimeLaunch)
+    
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let vc = BackgroundVC()
-        vc.delegate = self
-        viewPopup(withViewController: vc, withView: editView, bg: .cyan)
+        viewPopup(withViewController: OnceUponVC(), withView: nil)
     }
 
-
+    @IBAction func onHomeSelected(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func onBackgroundSelected(_ sender: Any) {
+        let vc = BackgroundVC()
+        vc.delegate = self
+        viewPopup(withViewController: vc, withView: editView)
+    }
+    
+    @IBAction func onRoleSelected(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onStickerSelected(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onRecord1Selected(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onPlaySelected(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onRecord2Selected(_ sender: Any) {
+        
+    }
+    
+    @IBAction func onAddPageSelected(_ sender: Any) {
+        
+    }
+    
+    
 }
 
 extension NewStoryVC: BackgroundVCDelegate {
