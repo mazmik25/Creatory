@@ -43,6 +43,11 @@
 		3227F27E22DD89AF00BCC591 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F27C22DD89AF00BCC591 /* LibraryCell.swift */; };
 		3227F27F22DD89AF00BCC591 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227F27D22DD89AF00BCC591 /* LibraryCell.xib */; };
 		3227F28122DD8B6600BCC591 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */; };
+		3294124822E16B1A00EB3BB1 /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124622E16B1A00EB3BB1 /* RecordVC.swift */; };
+		3294124922E16B1A00EB3BB1 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294124722E16B1A00EB3BB1 /* RecordVC.xib */; };
+		3294124C22E179BC00EB3BB1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124B22E179BC00EB3BB1 /* Badge.swift */; };
+		3294124F22E17CF100EB3BB1 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124D22E17CF100EB3BB1 /* BadgeCell.swift */; };
+		3294125022E17CF100EB3BB1 /* BadgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294124E22E17CF100EB3BB1 /* BadgeCell.xib */; };
 		32C1302722DD754E0025C69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1302622DD754E0025C69A /* AppDelegate.swift */; };
 		32C1302922DD754E0025C69A /* NewStoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1302822DD754E0025C69A /* NewStoryVC.swift */; };
 		32C1302C22DD754E0025C69A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C1302A22DD754E0025C69A /* Main.storyboard */; };
@@ -63,7 +68,7 @@
 		3217DE2F22DECF420079E715 /* Background.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Background.xcassets; sourceTree = "<group>"; };
 		3217DE3122DED03E0079E715 /* Sticker.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Sticker.xcassets; sourceTree = "<group>"; };
 		3217DE3322DED0690079E715 /* Badge.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Badge.xcassets; sourceTree = "<group>"; };
-		3217DE3522DED0EF0079E715 /* Character.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Character.xcassets; sourceTree = "<group>"; };
+		3217DE3522DED0EF0079E715 /* Character.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Character.xcassets; path = ../Character.xcassets; sourceTree = "<group>"; };
 		3217DE3722DED95C0079E715 /* BackgroundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundVC.swift; sourceTree = "<group>"; };
 		3217DE3822DED95C0079E715 /* BackgroundVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BackgroundVC.xib; sourceTree = "<group>"; };
 		3217DE3C22DEDCCE0079E715 /* BackgroundCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundCell.swift; sourceTree = "<group>"; };
@@ -94,6 +99,11 @@
 		3227F27C22DD89AF00BCC591 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		3227F27D22DD89AF00BCC591 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		3294124622E16B1A00EB3BB1 /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
+		3294124722E16B1A00EB3BB1 /* RecordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
+		3294124B22E179BC00EB3BB1 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
+		3294124D22E17CF100EB3BB1 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
+		3294124E22E17CF100EB3BB1 /* BadgeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeCell.xib; sourceTree = "<group>"; };
 		32C1302322DD754E0025C69A /* Creatory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Creatory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32C1302622DD754E0025C69A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32C1302822DD754E0025C69A /* NewStoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewStoryVC.swift; sourceTree = "<group>"; };
@@ -152,6 +162,7 @@
 		3217DE2322DEC9AC0079E715 /* Selection */ = {
 			isa = PBXGroup;
 			children = (
+				3294124422E16B0500EB3BB1 /* Record */,
 				3217DE2922DECA230079E715 /* Once Upon */,
 				3217DE2522DEC9BA0079E715 /* Sticker */,
 				3217DE2422DEC9B50079E715 /* Role */,
@@ -290,6 +301,7 @@
 		3227F26A22DD77B400BCC591 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				3294124A22E1798A00EB3BB1 /* Model */,
 				3227F26B22DD77BC00BCC591 /* View */,
 			);
 			path = Library;
@@ -341,16 +353,40 @@
 			children = (
 				3227F27C22DD89AF00BCC591 /* LibraryCell.swift */,
 				3227F27D22DD89AF00BCC591 /* LibraryCell.xib */,
+				3294124D22E17CF100EB3BB1 /* BadgeCell.swift */,
+				3294124E22E17CF100EB3BB1 /* BadgeCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		3294124422E16B0500EB3BB1 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				3294124522E16B0C00EB3BB1 /* View */,
+			);
+			path = Record;
+			sourceTree = "<group>";
+		};
+		3294124522E16B0C00EB3BB1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3294124622E16B1A00EB3BB1 /* RecordVC.swift */,
+				3294124722E16B1A00EB3BB1 /* RecordVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3294124A22E1798A00EB3BB1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3294124B22E179BC00EB3BB1 /* Badge.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		32C1301A22DD754E0025C69A = {
 			isa = PBXGroup;
 			children = (
-				4E1982DF22DF38BF00DF211F /* button white.xcassets */,
-				3217DE3522DED0EF0079E715 /* Character.xcassets */,
-				4E1982DD22DF250E00DF211F /* Button.xcassets */,
 				32C1302522DD754E0025C69A /* Creatory */,
 				32C1302422DD754E0025C69A /* Products */,
 				E48D1DCDE05C103E2609844C /* Pods */,
@@ -381,6 +417,9 @@
 				3217DE3322DED0690079E715 /* Badge.xcassets */,
 				3217DE5322DF2D890079E715 /* Character.xcassets */,
 				3217DE3122DED03E0079E715 /* Sticker.xcassets */,
+				4E1982DF22DF38BF00DF211F /* button white.xcassets */,
+				3217DE3522DED0EF0079E715 /* Character.xcassets */,
+				4E1982DD22DF250E00DF211F /* Button.xcassets */,
 				32C1303222DD754E0025C69A /* LaunchScreen.storyboard */,
 				32C1303522DD754E0025C69A /* Info.plist */,
 				32C1302D22DD754E0025C69A /* Creatory.xcdatamodeld */,
@@ -466,6 +505,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3227F26F22DD77CF00BCC591 /* LibraryVC.xib in Resources */,
+				3294125022E17CF100EB3BB1 /* BadgeCell.xib in Resources */,
 				3217DE6322E00E040079E715 /* StickerCell.xib in Resources */,
 				3217DE3422DED0690079E715 /* Badge.xcassets in Resources */,
 				3217DE3222DED03E0079E715 /* Sticker.xcassets in Resources */,
@@ -478,6 +518,7 @@
 				32C1303122DD754E0025C69A /* Assets.xcassets in Resources */,
 				3217DE2E22DECA480079E715 /* OnceUponVC.xib in Resources */,
 				3217DE3A22DED95C0079E715 /* BackgroundVC.xib in Resources */,
+				3294124922E16B1A00EB3BB1 /* RecordVC.xib in Resources */,
 				3217DE5022DEFE390079E715 /* PreviewVC.xib in Resources */,
 				3217DE5422DF2D890079E715 /* Character.xcassets in Resources */,
 				3227F27F22DD89AF00BCC591 /* LibraryCell.xib in Resources */,
@@ -552,11 +593,14 @@
 				3227F27E22DD89AF00BCC591 /* LibraryCell.swift in Sources */,
 				32C1302722DD754E0025C69A /* AppDelegate.swift in Sources */,
 				3227F28122DD8B6600BCC591 /* UIImageView+Extension.swift in Sources */,
+				3294124F22E17CF100EB3BB1 /* BadgeCell.swift in Sources */,
+				3294124822E16B1A00EB3BB1 /* RecordVC.swift in Sources */,
 				3217DE4B22DEF1880079E715 /* RoleCell.swift in Sources */,
 				3217DE4122DEDE860079E715 /* Background.swift in Sources */,
 				3217DE3922DED95C0079E715 /* BackgroundVC.swift in Sources */,
 				3217DE5D22DF301F0079E715 /* Sticker.swift in Sources */,
 				3227F27822DD7DEE00BCC591 /* PreferenceKey.swift in Sources */,
+				3294124C22E179BC00EB3BB1 /* Badge.swift in Sources */,
 				4E4F5D0122E055700098C6A6 /* StickerView.swift in Sources */,
 				3217DE4F22DEFE390079E715 /* PreviewVC.swift in Sources */,
 				3227F27A22DD7E9200BCC591 /* CreatoryNC.swift in Sources */,

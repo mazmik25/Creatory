@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RecordVC" customModule="Creatory" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionLabel" destination="Ys6-dV-Oqg" id="Xpe-U3-1Te"/>
+                <outlet property="tapToRecordLabel" destination="GHb-Xw-Sa1" id="szr-O7-d6i"/>
+                <outlet property="timerLabel" destination="itK-Rw-BDp" id="bCS-iL-UpC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xDi-qj-7hz">
+                    <rect key="frame" x="0.0" y="0.0" width="378" height="414"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ys6-dV-Oqg">
+                            <rect key="frame" x="16" y="24" width="346" height="41"/>
+                            <string key="text">Recording sound 
+for Juan . . .</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:30" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="itK-Rw-BDp">
+                            <rect key="frame" x="16" y="89" width="346" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gb8-vL-qpc">
+                            <rect key="frame" x="157" y="175" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="64" id="RPh-Eb-HAj"/>
+                                <constraint firstAttribute="height" constant="64" id="lBT-1R-gTU"/>
+                            </constraints>
+                            <state key="normal" title="Button" image="record"/>
+                            <connections>
+                                <action selector="onRecording:" destination="-1" eventType="touchUpInside" id="XrG-eH-GgE"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="edX-zw-EMD">
+                            <rect key="frame" x="32" y="326" width="314" height="64"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHq-7b-apF">
+                                    <rect key="frame" x="0.0" y="0.0" width="67.5" height="64"/>
+                                    <state key="normal" title="TRASH" image="delete page"/>
+                                    <connections>
+                                        <action selector="onDeleteRecord:" destination="-1" eventType="touchUpInside" id="Fhv-pW-oT0"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-Jg-hKa">
+                                    <rect key="frame" x="123.5" y="0.0" width="67" height="64"/>
+                                    <state key="normal" title="PLAY" image="play"/>
+                                    <connections>
+                                        <action selector="onPlayRecord:" destination="-1" eventType="touchUpInside" id="pFE-He-45x"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sjX-OL-gEd">
+                                    <rect key="frame" x="246.5" y="0.0" width="67.5" height="64"/>
+                                    <state key="normal" title="DONE" image="done"/>
+                                    <connections>
+                                        <action selector="onDoneRecord:" destination="-1" eventType="touchUpInside" id="kHt-jo-7nr"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="aNI-zC-1Vg"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap to Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHb-Xw-Sa1" userLabel="Tap to Record">
+                            <rect key="frame" x="141.5" y="247" width="95" height="17"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <color key="textColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94901960780000005" green="0.88235294119999996" blue="0.88235294119999996" alpha="0.93000000000000005" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="itK-Rw-BDp" secondAttribute="trailing" constant="16" id="ANz-DT-4Jp"/>
+                        <constraint firstItem="edX-zw-EMD" firstAttribute="leading" secondItem="xDi-qj-7hz" secondAttribute="leading" constant="32" id="AX4-su-0Va"/>
+                        <constraint firstAttribute="bottom" secondItem="edX-zw-EMD" secondAttribute="bottom" constant="24" id="KO7-gK-K7s"/>
+                        <constraint firstItem="itK-Rw-BDp" firstAttribute="leading" secondItem="xDi-qj-7hz" secondAttribute="leading" constant="16" id="Kc0-pN-KwU"/>
+                        <constraint firstAttribute="trailing" secondItem="Ys6-dV-Oqg" secondAttribute="trailing" constant="16" id="Lhn-6G-H9a"/>
+                        <constraint firstAttribute="width" constant="378" id="WPr-LW-wsV"/>
+                        <constraint firstItem="gb8-vL-qpc" firstAttribute="centerY" secondItem="xDi-qj-7hz" secondAttribute="centerY" id="a55-Rl-kvH"/>
+                        <constraint firstAttribute="trailing" secondItem="edX-zw-EMD" secondAttribute="trailing" constant="32" id="pio-Iv-Qds"/>
+                        <constraint firstItem="gb8-vL-qpc" firstAttribute="centerX" secondItem="xDi-qj-7hz" secondAttribute="centerX" id="r4F-99-YwO"/>
+                        <constraint firstItem="itK-Rw-BDp" firstAttribute="top" secondItem="Ys6-dV-Oqg" secondAttribute="bottom" constant="24" id="sX0-Pc-7jh"/>
+                        <constraint firstItem="Ys6-dV-Oqg" firstAttribute="top" secondItem="xDi-qj-7hz" secondAttribute="top" constant="24" id="sdX-YN-G92"/>
+                        <constraint firstItem="GHb-Xw-Sa1" firstAttribute="top" secondItem="gb8-vL-qpc" secondAttribute="bottom" constant="8" id="skn-Vf-Nut"/>
+                        <constraint firstItem="Ys6-dV-Oqg" firstAttribute="leading" secondItem="xDi-qj-7hz" secondAttribute="leading" constant="16" id="we2-tu-zpS"/>
+                        <constraint firstItem="GHb-Xw-Sa1" firstAttribute="centerX" secondItem="xDi-qj-7hz" secondAttribute="centerX" id="zRx-Vo-GnH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xDi-qj-7hz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ksh-7K-MhA"/>
+                <constraint firstAttribute="bottom" secondItem="xDi-qj-7hz" secondAttribute="bottom" id="ghp-Pk-ijt"/>
+                <constraint firstItem="xDi-qj-7hz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="lTW-t3-trm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="22.767857142857142" y="76.811594202898561"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete page" width="308" height="308"/>
+        <image name="done" width="308" height="308"/>
+        <image name="play" width="308" height="308"/>
+        <image name="record" width="308" height="308"/>
+    </resources>
+</document>
