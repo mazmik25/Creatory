@@ -4,6 +4,8 @@
 <dict>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string></string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Allow us to record your voice, please</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string></string>
 	<key>CFBundleDevelopmentRegion</key>

@@ -161,8 +161,8 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRe-jE-rL4">
                                                 <rect key="frame" x="43" y="24" width="52" height="52"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <state key="normal" title="Button" image="delete page off"/>
+                                                <color key="backgroundColor" red="0.90761512517929077" green="0.40426266193389893" blue="0.41175073385238647" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <state key="normal" title="Button" image="delete page"/>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -228,7 +228,7 @@
     <resources>
         <image name="New home" width="308" height="308"/>
         <image name="button board" width="341" height="414"/>
-        <image name="delete page off" width="300" height="300"/>
+        <image name="delete page" width="308" height="308"/>
         <image name="done" width="308" height="308"/>
         <image name="image" width="308" height="308"/>
         <image name="new add page" width="300" height="300"/>

@@ -93,7 +93,7 @@ extension LibraryVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         if collectionView == libraryCollectionView {
             return CGSize(width: 140.0, height: 80.0)
         } else if collectionView == badgesCollectionView {
-            return CGSize(width: 95, height: 95)
+            return CGSize(width: 90, height: 90)
         } else {
             return CGSize(width: 0.0, height: 0.0)
         }
@@ -114,8 +114,11 @@ extension LibraryVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
         } else {
             cell.imageView.image = UIImage(named: "add")!
         }
+        let red  = CGFloat(39.0 / 255.0)
+        let green  = CGFloat(138.0 / 255.0)
+        let blue  = CGFloat(255 / 255.0)
         
-        cell.contentView.applyBorder(width: 1.0, color: .blue, radius: .custom(0.0))
+        cell.contentView.applyBorder(width: 1.0, color: UIColor(red: red, green: green, blue: blue, alpha: 1.0), radius: .custom(0.0))
         return cell
     }
     

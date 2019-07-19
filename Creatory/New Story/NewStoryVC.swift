@@ -20,14 +20,15 @@ class NewStoryVC: BaseVC {
         super.viewDidLoad()
         
         Preference.set(value: true, forKey: .isFirstNotTimeLaunch)
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissPopupOnTap))
+        backgroundImageView.addGestureRecognizer(tap)
+
         viewPopup(withViewController: OnceUponVC(), withView: self.view)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-//        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissPopupOnTap))
-//        backgroundImageView.addGestureRecognizer(tap)
     }
     
     @objc func dismissPopupOnTap() {
