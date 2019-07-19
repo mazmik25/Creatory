@@ -19,6 +19,7 @@ class StickerCell: UICollectionViewCell {
     var sticker: Sticker! {
         didSet {
             imageView.image = UIImage(named: self.sticker.name)
+            
         }
     }
     

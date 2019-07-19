@@ -32,6 +32,7 @@ class StickerVC: UIViewController {
 
         setupView()
         filter(type: .natural)
+        changeBackgroundColor(opacity1: 1, opacity2: 0.45)
     }
     
     private func setupView() {
@@ -75,8 +76,12 @@ class StickerVC: UIViewController {
     }
 
     private func changeBackgroundColor(opacity1: CGFloat, opacity2: CGFloat) {
-        naturalView.backgroundColor = UIColor.blue.withAlphaComponent(opacity1)
-        objectView.backgroundColor = UIColor.blue.withAlphaComponent(opacity2)
+        let red  = CGFloat(39.0 / 255.0)
+        let green  = CGFloat(138.0 / 255.0)
+        let blue  = CGFloat(255 / 255.0)
+        naturalView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: opacity1)
+//        UIColor.blue.withAlphaComponent(opacity1)
+        objectView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: opacity2)
     }
     
     private func filter(type: StickerType) {
@@ -85,7 +90,7 @@ class StickerVC: UIViewController {
     }
 }
 
-extension StickerVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension StickerVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return filtered.count
     }
@@ -104,6 +109,6 @@ extension StickerVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 80.0, height: 60.0)
+        return CGSize(width: 70.0, height: 90.0)
     }
 }
