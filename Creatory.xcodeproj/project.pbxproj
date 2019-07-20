@@ -49,6 +49,14 @@
 		32C1302F22DD754E0025C69A /* Creatory.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 32C1302D22DD754E0025C69A /* Creatory.xcdatamodeld */; };
 		32C1303122DD754E0025C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C1303022DD754E0025C69A /* Assets.xcassets */; };
 		32C1303422DD754E0025C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C1303222DD754E0025C69A /* LaunchScreen.storyboard */; };
+		3B3638CB22E1A5CF00A897C8 /* PreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3638CA22E1A5CF00A897C8 /* PreviewModel.swift */; };
+		3B3638CD22E2B94200A897C8 /* PushPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3638CC22E2B94200A897C8 /* PushPreview.swift */; };
+		3B3638D222E2D9C200A897C8 /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3638D022E2D9C200A897C8 /* PreviewCell.swift */; };
+		3B3638D322E2D9C200A897C8 /* PreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3638D122E2D9C200A897C8 /* PreviewCell.xib */; };
+		3B8A4A2A22E0B241001AC739 /* AlertPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2922E0B241001AC739 /* AlertPopUp.storyboard */; };
+		3B8A4A2C22E0B30C001AC739 /* AlertViewPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2B22E0B30C001AC739 /* AlertViewPopUp.swift */; };
+		3B8A4A2E22E0B3EA001AC739 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2D22E0B3EA001AC739 /* AlertService.swift */; };
+		3B8A4A3022E15A69001AC739 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2F22E15A69001AC739 /* PreviewAssets.xcassets */; };
 		4E1982DE22DF250E00DF211F /* Button.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1982DD22DF250E00DF211F /* Button.xcassets */; };
 		4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1982DF22DF38BF00DF211F /* button white.xcassets */; };
 		4E4F5CFD22E01CD90098C6A6 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F5CFC22E01CD90098C6A6 /* ButtonCustom.swift */; };
@@ -102,6 +110,14 @@
 		32C1303022DD754E0025C69A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32C1303322DD754E0025C69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C1303522DD754E0025C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B3638CA22E1A5CF00A897C8 /* PreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModel.swift; sourceTree = "<group>"; };
+		3B3638CC22E2B94200A897C8 /* PushPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPreview.swift; sourceTree = "<group>"; };
+		3B3638D022E2D9C200A897C8 /* PreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
+		3B3638D122E2D9C200A897C8 /* PreviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewCell.xib; sourceTree = "<group>"; };
+		3B8A4A2922E0B241001AC739 /* AlertPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertPopUp.storyboard; sourceTree = "<group>"; };
+		3B8A4A2B22E0B30C001AC739 /* AlertViewPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewPopUp.swift; sourceTree = "<group>"; };
+		3B8A4A2D22E0B3EA001AC739 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
+		3B8A4A2F22E15A69001AC739 /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
 		3D6085C5D2D7DB028F57B2C8 /* Pods_Creatory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Creatory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1982DD22DF250E00DF211F /* Button.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Button.xcassets; sourceTree = "<group>"; };
 		4E1982DF22DF38BF00DF211F /* button white.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "button white.xcassets"; sourceTree = "<group>"; };
@@ -126,6 +142,7 @@
 		3217DE2022DEC98B0079E715 /* Preview */ = {
 			isa = PBXGroup;
 			children = (
+				3B3638C722E17ADC00A897C8 /* Model */,
 				3217DE2122DEC9920079E715 /* View */,
 			);
 			path = Preview;
@@ -134,8 +151,13 @@
 		3217DE2122DEC9920079E715 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3B3638CF22E2D97200A897C8 /* Cell */,
 				3217DE4D22DEFE390079E715 /* PreviewVC.swift */,
 				3217DE4E22DEFE390079E715 /* PreviewVC.xib */,
+				3B8A4A2922E0B241001AC739 /* AlertPopUp.storyboard */,
+				3B8A4A2B22E0B30C001AC739 /* AlertViewPopUp.swift */,
+				3B8A4A2D22E0B3EA001AC739 /* AlertService.swift */,
+				3B3638CC22E2B94200A897C8 /* PushPreview.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -348,6 +370,7 @@
 		32C1301A22DD754E0025C69A = {
 			isa = PBXGroup;
 			children = (
+				3B8A4A2F22E15A69001AC739 /* PreviewAssets.xcassets */,
 				4E1982DF22DF38BF00DF211F /* button white.xcassets */,
 				3217DE3522DED0EF0079E715 /* Character.xcassets */,
 				4E1982DD22DF250E00DF211F /* Button.xcassets */,
@@ -386,6 +409,23 @@
 				32C1302D22DD754E0025C69A /* Creatory.xcdatamodeld */,
 			);
 			path = Creatory;
+			sourceTree = "<group>";
+		};
+		3B3638C722E17ADC00A897C8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B3638CA22E1A5CF00A897C8 /* PreviewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3B3638CF22E2D97200A897C8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3B3638D022E2D9C200A897C8 /* PreviewCell.swift */,
+				3B3638D122E2D9C200A897C8 /* PreviewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		CD87C382EF391FABCD0E4AA5 /* Frameworks */ = {
@@ -470,6 +510,7 @@
 				3217DE3422DED0690079E715 /* Badge.xcassets in Resources */,
 				3217DE3222DED03E0079E715 /* Sticker.xcassets in Resources */,
 				3217DE3F22DEDCCE0079E715 /* BackgroundCell.xib in Resources */,
+				3B8A4A2A22E0B241001AC739 /* AlertPopUp.storyboard in Resources */,
 				3217DE3622DED0EF0079E715 /* Character.xcassets in Resources */,
 				4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */,
 				32C1303422DD754E0025C69A /* LaunchScreen.storyboard in Resources */,
@@ -481,8 +522,10 @@
 				3217DE5022DEFE390079E715 /* PreviewVC.xib in Resources */,
 				3217DE5422DF2D890079E715 /* Character.xcassets in Resources */,
 				3227F27F22DD89AF00BCC591 /* LibraryCell.xib in Resources */,
+				3B8A4A3022E15A69001AC739 /* PreviewAssets.xcassets in Resources */,
 				3217DE5822DF2F5F0079E715 /* StickerVC.xib in Resources */,
 				3217DE3022DECF420079E715 /* Background.xcassets in Resources */,
+				3B3638D322E2D9C200A897C8 /* PreviewCell.xib in Resources */,
 				32C1302C22DD754E0025C69A /* Main.storyboard in Resources */,
 				3217DE4C22DEF1880079E715 /* RoleCell.xib in Resources */,
 			);
@@ -538,10 +581,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3217DE4622DEF0730079E715 /* RoleVC.swift in Sources */,
+				3B3638D222E2D9C200A897C8 /* PreviewCell.swift in Sources */,
 				3217DE6222E00E040079E715 /* StickerCell.swift in Sources */,
+				3B3638CD22E2B94200A897C8 /* PushPreview.swift in Sources */,
+				3B8A4A2E22E0B3EA001AC739 /* AlertService.swift in Sources */,
 				3227F27522DD7DDC00BCC591 /* Preference.swift in Sources */,
 				3217DE2D22DECA480079E715 /* OnceUponVC.swift in Sources */,
 				32C1302922DD754E0025C69A /* NewStoryVC.swift in Sources */,
+				3B8A4A2C22E0B30C001AC739 /* AlertViewPopUp.swift in Sources */,
 				3227F27122DD7C8C00BCC591 /* BaseVC.swift in Sources */,
 				3217DE4322DEE0B10079E715 /* UIViewController+Extension.swift in Sources */,
 				32C1302F22DD754E0025C69A /* Creatory.xcdatamodeld in Sources */,
@@ -560,6 +607,7 @@
 				4E4F5D0122E055700098C6A6 /* StickerView.swift in Sources */,
 				3217DE4F22DEFE390079E715 /* PreviewVC.swift in Sources */,
 				3227F27A22DD7E9200BCC591 /* CreatoryNC.swift in Sources */,
+				3B3638CB22E1A5CF00A897C8 /* PreviewModel.swift in Sources */,
 				4E4F5CFD22E01CD90098C6A6 /* ButtonCustom.swift in Sources */,
 				3217DE5722DF2F5F0079E715 /* StickerVC.swift in Sources */,
 				3227F26E22DD77CF00BCC591 /* LibraryVC.swift in Sources */,
@@ -710,7 +758,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = STKR5JMBGH;
+				DEVELOPMENT_TEAM = 8QT8GPQG67;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,7 +777,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = STKR5JMBGH;
+				DEVELOPMENT_TEAM = 8QT8GPQG67;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
