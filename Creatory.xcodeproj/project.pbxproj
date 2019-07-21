@@ -33,6 +33,16 @@
 		3217DE5D22DF301F0079E715 /* Sticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE5C22DF301F0079E715 /* Sticker.swift */; };
 		3217DE6222E00E040079E715 /* StickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE6022E00E040079E715 /* StickerCell.swift */; };
 		3217DE6322E00E040079E715 /* StickerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3217DE6122E00E040079E715 /* StickerCell.xib */; };
+		321D9A5A22E1F22F008C28C5 /* TimeInterval+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D9A5922E1F22F008C28C5 /* TimeInterval+Extension.swift */; };
+		321D9A5F22E1F49F008C28C5 /* SelectRoleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D9A5D22E1F49F008C28C5 /* SelectRoleVC.swift */; };
+		321D9A6022E1F49F008C28C5 /* SelectRoleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321D9A5E22E1F49F008C28C5 /* SelectRoleVC.xib */; };
+		321D9A6322E2905C008C28C5 /* CDHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D9A6222E2905C008C28C5 /* CDHelper.swift */; };
+		321D9A6622E332A9008C28C5 /* BadgeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D9A6522E332A9008C28C5 /* BadgeModel.swift */; };
+		321D9A6822E332C3008C28C5 /* StoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D9A6722E332C3008C28C5 /* StoryModel.swift */; };
+		321D9A8322E334DD008C28C5 /* PickRoleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D9A7D22E334DD008C28C5 /* PickRoleVC.swift */; };
+		321D9A8422E334DD008C28C5 /* PickRoleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321D9A7F22E334DD008C28C5 /* PickRoleCell.swift */; };
+		321D9A8522E334DD008C28C5 /* PickRoleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321D9A8022E334DD008C28C5 /* PickRoleCell.xib */; };
+		321D9A8622E334DD008C28C5 /* PickRoleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321D9A8122E334DD008C28C5 /* PickRoleVC.xib */; };
 		3227F26922DD773D00BCC591 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F26822DD773D00BCC591 /* UIView+Extension.swift */; };
 		3227F26E22DD77CF00BCC591 /* LibraryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F26C22DD77CF00BCC591 /* LibraryVC.swift */; };
 		3227F26F22DD77CF00BCC591 /* LibraryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227F26D22DD77CF00BCC591 /* LibraryVC.xib */; };
@@ -45,7 +55,6 @@
 		3227F28122DD8B6600BCC591 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */; };
 		3294124822E16B1A00EB3BB1 /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124622E16B1A00EB3BB1 /* RecordVC.swift */; };
 		3294124922E16B1A00EB3BB1 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294124722E16B1A00EB3BB1 /* RecordVC.xib */; };
-		3294124C22E179BC00EB3BB1 /* Badge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124B22E179BC00EB3BB1 /* Badge.swift */; };
 		3294124F22E17CF100EB3BB1 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124D22E17CF100EB3BB1 /* BadgeCell.swift */; };
 		3294125022E17CF100EB3BB1 /* BadgeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294124E22E17CF100EB3BB1 /* BadgeCell.xib */; };
 		32C1302722DD754E0025C69A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C1302622DD754E0025C69A /* AppDelegate.swift */; };
@@ -89,6 +98,16 @@
 		3217DE5E22DF36180079E715 /* Testing.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Testing.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		3217DE6022E00E040079E715 /* StickerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerCell.swift; sourceTree = "<group>"; };
 		3217DE6122E00E040079E715 /* StickerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickerCell.xib; sourceTree = "<group>"; };
+		321D9A5922E1F22F008C28C5 /* TimeInterval+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Extension.swift"; sourceTree = "<group>"; };
+		321D9A5D22E1F49F008C28C5 /* SelectRoleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRoleVC.swift; sourceTree = "<group>"; };
+		321D9A5E22E1F49F008C28C5 /* SelectRoleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectRoleVC.xib; sourceTree = "<group>"; };
+		321D9A6222E2905C008C28C5 /* CDHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDHelper.swift; sourceTree = "<group>"; };
+		321D9A6522E332A9008C28C5 /* BadgeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeModel.swift; sourceTree = "<group>"; };
+		321D9A6722E332C3008C28C5 /* StoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryModel.swift; sourceTree = "<group>"; };
+		321D9A7D22E334DD008C28C5 /* PickRoleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickRoleVC.swift; sourceTree = "<group>"; };
+		321D9A7F22E334DD008C28C5 /* PickRoleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickRoleCell.swift; sourceTree = "<group>"; };
+		321D9A8022E334DD008C28C5 /* PickRoleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickRoleCell.xib; sourceTree = "<group>"; };
+		321D9A8122E334DD008C28C5 /* PickRoleVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickRoleVC.xib; sourceTree = "<group>"; };
 		3227F26822DD773D00BCC591 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		3227F26C22DD77CF00BCC591 /* LibraryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryVC.swift; sourceTree = "<group>"; };
 		3227F26D22DD77CF00BCC591 /* LibraryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryVC.xib; sourceTree = "<group>"; };
@@ -101,7 +120,6 @@
 		3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		3294124622E16B1A00EB3BB1 /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
 		3294124722E16B1A00EB3BB1 /* RecordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
-		3294124B22E179BC00EB3BB1 /* Badge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Badge.swift; sourceTree = "<group>"; };
 		3294124D22E17CF100EB3BB1 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
 		3294124E22E17CF100EB3BB1 /* BadgeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BadgeCell.xib; sourceTree = "<group>"; };
 		32C1302322DD754E0025C69A /* Creatory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Creatory.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,7 +192,6 @@
 		3217DE2422DEC9B50079E715 /* Role */ = {
 			isa = PBXGroup;
 			children = (
-				3217DE5A22DF2FE20079E715 /* Model */,
 				3217DE2722DEC9E70079E715 /* View */,
 			);
 			path = Role;
@@ -288,12 +305,78 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		321D9A5B22E1F486008C28C5 /* Select Role */ = {
+			isa = PBXGroup;
+			children = (
+				321D9A6922E3349C008C28C5 /* Selection */,
+				321D9A5C22E1F48E008C28C5 /* View */,
+			);
+			path = "Select Role";
+			sourceTree = "<group>";
+		};
+		321D9A5C22E1F48E008C28C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				321D9A5D22E1F49F008C28C5 /* SelectRoleVC.swift */,
+				321D9A5E22E1F49F008C28C5 /* SelectRoleVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		321D9A6422E3329E008C28C5 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				321D9A6222E2905C008C28C5 /* CDHelper.swift */,
+				321D9A6522E332A9008C28C5 /* BadgeModel.swift */,
+				321D9A6722E332C3008C28C5 /* StoryModel.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		321D9A6922E3349C008C28C5 /* Selection */ = {
+			isa = PBXGroup;
+			children = (
+				321D9A7922E334DD008C28C5 /* Role */,
+			);
+			name = Selection;
+			path = View/Selection;
+			sourceTree = "<group>";
+		};
+		321D9A7922E334DD008C28C5 /* Role */ = {
+			isa = PBXGroup;
+			children = (
+				3217DE5A22DF2FE20079E715 /* Model */,
+				321D9A7C22E334DD008C28C5 /* View */,
+			);
+			path = Role;
+			sourceTree = "<group>";
+		};
+		321D9A7C22E334DD008C28C5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				321D9A7E22E334DD008C28C5 /* Cell */,
+				321D9A7D22E334DD008C28C5 /* PickRoleVC.swift */,
+				321D9A8122E334DD008C28C5 /* PickRoleVC.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		321D9A7E22E334DD008C28C5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				321D9A7F22E334DD008C28C5 /* PickRoleCell.swift */,
+				321D9A8022E334DD008C28C5 /* PickRoleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		3227F26722DD773300BCC591 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
 				3227F26822DD773D00BCC591 /* UIView+Extension.swift */,
 				3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */,
 				3217DE4222DEE0B10079E715 /* UIViewController+Extension.swift */,
+				321D9A5922E1F22F008C28C5 /* TimeInterval+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -301,7 +384,6 @@
 		3227F26A22DD77B400BCC591 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				3294124A22E1798A00EB3BB1 /* Model */,
 				3227F26B22DD77BC00BCC591 /* View */,
 			);
 			path = Library;
@@ -331,6 +413,7 @@
 		3227F27322DD7D4000BCC591 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				321D9A6422E3329E008C28C5 /* Config */,
 				4E4F5D0022E055700098C6A6 /* StickerView.swift */,
 				3227F27022DD7C8C00BCC591 /* BaseVC.swift */,
 				3227F27922DD7E9200BCC591 /* CreatoryNC.swift */,
@@ -376,14 +459,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		3294124A22E1798A00EB3BB1 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				3294124B22E179BC00EB3BB1 /* Badge.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		32C1301A22DD754E0025C69A = {
 			isa = PBXGroup;
 			children = (
@@ -408,8 +483,9 @@
 				3217DE2022DEC98B0079E715 /* Preview */,
 				3227F27622DD7DE000BCC591 /* Preference */,
 				3227F27322DD7D4000BCC591 /* Base */,
-				3227F27222DD7D2E00BCC591 /* New Story */,
 				3227F26A22DD77B400BCC591 /* Library */,
+				321D9A5B22E1F486008C28C5 /* Select Role */,
+				3227F27222DD7D2E00BCC591 /* New Story */,
 				3227F26722DD773300BCC591 /* Extension */,
 				32C1302622DD754E0025C69A /* AppDelegate.swift */,
 				32C1303022DD754E0025C69A /* Assets.xcassets */,
@@ -511,6 +587,7 @@
 				3217DE3222DED03E0079E715 /* Sticker.xcassets in Resources */,
 				3217DE3F22DEDCCE0079E715 /* BackgroundCell.xib in Resources */,
 				3217DE3622DED0EF0079E715 /* Character.xcassets in Resources */,
+				321D9A8522E334DD008C28C5 /* PickRoleCell.xib in Resources */,
 				4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */,
 				32C1303422DD754E0025C69A /* LaunchScreen.storyboard in Resources */,
 				3217DE4722DEF0730079E715 /* RoleVC.xib in Resources */,
@@ -524,8 +601,10 @@
 				3227F27F22DD89AF00BCC591 /* LibraryCell.xib in Resources */,
 				3217DE5822DF2F5F0079E715 /* StickerVC.xib in Resources */,
 				3217DE3022DECF420079E715 /* Background.xcassets in Resources */,
+				321D9A6022E1F49F008C28C5 /* SelectRoleVC.xib in Resources */,
 				32C1302C22DD754E0025C69A /* Main.storyboard in Resources */,
 				3217DE4C22DEF1880079E715 /* RoleCell.xib in Resources */,
+				321D9A8622E334DD008C28C5 /* PickRoleVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,7 +662,9 @@
 				3227F27522DD7DDC00BCC591 /* Preference.swift in Sources */,
 				3217DE2D22DECA480079E715 /* OnceUponVC.swift in Sources */,
 				32C1302922DD754E0025C69A /* NewStoryVC.swift in Sources */,
+				321D9A6622E332A9008C28C5 /* BadgeModel.swift in Sources */,
 				3227F27122DD7C8C00BCC591 /* BaseVC.swift in Sources */,
+				321D9A8322E334DD008C28C5 /* PickRoleVC.swift in Sources */,
 				3217DE4322DEE0B10079E715 /* UIViewController+Extension.swift in Sources */,
 				32C1302F22DD754E0025C69A /* Creatory.xcdatamodeld in Sources */,
 				3227F26922DD773D00BCC591 /* UIView+Extension.swift in Sources */,
@@ -591,21 +672,25 @@
 				3217DE1E22DEC75B0079E715 /* RadiusType.swift in Sources */,
 				3217DE3E22DEDCCE0079E715 /* BackgroundCell.swift in Sources */,
 				3227F27E22DD89AF00BCC591 /* LibraryCell.swift in Sources */,
+				321D9A8422E334DD008C28C5 /* PickRoleCell.swift in Sources */,
 				32C1302722DD754E0025C69A /* AppDelegate.swift in Sources */,
 				3227F28122DD8B6600BCC591 /* UIImageView+Extension.swift in Sources */,
 				3294124F22E17CF100EB3BB1 /* BadgeCell.swift in Sources */,
+				321D9A6322E2905C008C28C5 /* CDHelper.swift in Sources */,
+				321D9A5F22E1F49F008C28C5 /* SelectRoleVC.swift in Sources */,
 				3294124822E16B1A00EB3BB1 /* RecordVC.swift in Sources */,
+				321D9A6822E332C3008C28C5 /* StoryModel.swift in Sources */,
 				3217DE4B22DEF1880079E715 /* RoleCell.swift in Sources */,
 				3217DE4122DEDE860079E715 /* Background.swift in Sources */,
 				3217DE3922DED95C0079E715 /* BackgroundVC.swift in Sources */,
 				3217DE5D22DF301F0079E715 /* Sticker.swift in Sources */,
 				3227F27822DD7DEE00BCC591 /* PreferenceKey.swift in Sources */,
-				3294124C22E179BC00EB3BB1 /* Badge.swift in Sources */,
 				4E4F5D0122E055700098C6A6 /* StickerView.swift in Sources */,
 				3217DE4F22DEFE390079E715 /* PreviewVC.swift in Sources */,
 				3227F27A22DD7E9200BCC591 /* CreatoryNC.swift in Sources */,
 				4E4F5CFD22E01CD90098C6A6 /* ButtonCustom.swift in Sources */,
 				3217DE5722DF2F5F0079E715 /* StickerVC.swift in Sources */,
+				321D9A5A22E1F22F008C28C5 /* TimeInterval+Extension.swift in Sources */,
 				3227F26E22DD77CF00BCC591 /* LibraryVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

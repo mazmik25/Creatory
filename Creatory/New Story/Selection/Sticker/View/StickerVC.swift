@@ -80,7 +80,6 @@ class StickerVC: UIViewController {
         let green  = CGFloat(138.0 / 255.0)
         let blue  = CGFloat(255 / 255.0)
         naturalView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: opacity1)
-//        UIColor.blue.withAlphaComponent(opacity1)
         objectView.backgroundColor = UIColor(red: red, green: green, blue: blue, alpha: opacity2)
     }
     
@@ -98,7 +97,6 @@ extension StickerVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: StickerCell.identifier, for: indexPath) as? StickerCell else { return UICollectionViewCell() }
         
-//        cell.role = roles[indexPath.row]
         cell.sticker = filtered[indexPath.row]
         
         return cell

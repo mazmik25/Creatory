@@ -19,7 +19,7 @@ class CreatoryNC: UINavigationController {
             viewControllers = [vc]
         } else {
             createBadges()
-            present(NewStoryVC(), animated: true, completion: nil)
+            present(SelectRoleVC(), animated: true, completion: nil)
         }
         
     }
@@ -32,18 +32,10 @@ class CreatoryNC: UINavigationController {
         guard let delegate = UIApplication.shared.delegate as? AppDelegate else { return }
         let context = delegate.persistentContainer.viewContext
         
-        let numberOfBadges = 6
+        let numberOfBadges = 5
         for i in 0..<numberOfBadges {
-            let badge = Badge(context: context)
-            badge.name = "Badges-\(i+1)"
-            badge.isReceived = false
-            
-            do {
-                try context.save()
-            } catch {
-                print(error)
-            }
-            
+            let badge = BadgeModel(context: context)
+            badge.save(name: "Badges-\(i+1)", isReceived: false)
         }
     }
 

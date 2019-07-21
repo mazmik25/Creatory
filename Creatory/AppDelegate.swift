@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
 //        Preference.set(value: true, forKey: .isFirstTimeLaunch)
+        
         return true
     }
 

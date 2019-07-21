@@ -10,5 +10,10 @@ import Foundation
 
 enum PreferenceKey: String {
     case isFirstNotTimeLaunch = "isFirstNotTimeLaunch"
+    case playerOne = "playerOne"
+    case playerTwo = "playerTwo"
+    case nameOne = "nameOne"
+    case nameTwo = "nameTwo"
     case badgesCount = "badgesCount"
+    case numberOfStories = "numberOfStories"
 }

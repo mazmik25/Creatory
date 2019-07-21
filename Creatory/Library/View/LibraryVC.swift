@@ -40,25 +40,15 @@ class LibraryVC: BaseVC {
     
     private func loadBadges() {
         guard let context = getManagedContextObject() else { return }
-        
-        do {
-            badges = try context.fetch(Badge.fetchRequest())
-        } catch {
-            print(error)
-        }
-        
+        let badge = BadgeModel(context: context)
+        badges = badge.getAll()
         badgesCollectionView.reloadData()
     }
     
     private func loadStories() {
         guard let context = getManagedContextObject() else { return }
-        
-        do {
-            stories = try context.fetch(Story.fetchRequest())
-        } catch {
-            print(error)
-        }
-        
+        let story = StoryModel(context: context)
+        stories = story.getAll()
         libraryCollectionView.reloadData()
     }
 
@@ -68,7 +58,7 @@ extension LibraryVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == libraryCollectionView {
-            guard let stories = stories else { return 1 }
+            guard let stories = stories, let _ = stories[0].videoPath else { return 1 }
             return stories.count + 1
         } else if collectionView == badgesCollectionView {
             guard let badges = badges else { return 0 }
@@ -109,11 +99,12 @@ extension LibraryVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     private func setupLibCell(_ cv: UICollectionView, _ indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = cv.dequeueReusableCell(withReuseIdentifier: LibraryCell.identifier, for: indexPath) as? LibraryCell else { return UICollectionViewCell() }
     
-        if let stories = stories, indexPath.row < stories.count {
-            cell.imageView.setupPreview(withPath: stories[indexPath.row].videoPath ?? "")
+        if let stories = stories, indexPath.row < stories.count, let path = stories[indexPath.row].videoPath {
+            cell.imageView.setupPreview(withPath: path)
         } else {
             cell.imageView.image = UIImage(named: "add")!
         }
+        
         let red  = CGFloat(39.0 / 255.0)
         let green  = CGFloat(138.0 / 255.0)
         let blue  = CGFloat(255 / 255.0)
@@ -131,12 +122,10 @@ extension LibraryVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
     
     private func handleStory(_ indexPath: IndexPath) {
-        if let stories = stories, indexPath.row < stories.count {
+        if let stories = stories, indexPath.row < stories.count, let _ = stories[indexPath.row].videoPath {
             //preview
         } else {
-            let sb = UIStoryboard(name: "Main", bundle: nil)
-            let vc = sb.instantiateViewController(withIdentifier: "NewStoryVC") as! NewStoryVC
-            self.present(vc, animated: true, completion: nil)
+            present(SelectRoleVC(), animated: true, completion: nil)
         }
     }
     

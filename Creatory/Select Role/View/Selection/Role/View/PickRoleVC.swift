@@ -8,48 +8,38 @@
 
 import UIKit
 
-protocol RolesVCDelegate: class {
-    func onRoleSelected(name: String)
+protocol PickVCDelegate: class {
+    func onRoleSelected(name: String, withPlayer id: Int)
 }
 
-class RoleVC: UIViewController {
+class PickRoleVC: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
-    weak var delegate: RolesVCDelegate?
-    var roles = [Role]()
+    weak var delegate: PickVCDelegate?
+    let roles = Role.generateRoles()
+    var id: Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setupPlayers()
         setupCollectionView()
     }
     
-    private func setupPlayers() {
-        let playerOne = Role(name: Preference.getString(forKey: .playerOne) ?? "empty")
-        let playerTwo = Role(name: Preference.getString(forKey: .playerTwo) ?? "empty")
-        
-        roles.append(playerOne)
-        roles.append(playerTwo)
-    }
-    
     private func setupCollectionView() {
-        collectionView.register(UINib(nibName: RoleCell.identifier, bundle: nil), forCellWithReuseIdentifier: RoleCell.identifier)
+        collectionView.register(UINib(nibName: PickRoleCell.identifier, bundle: nil), forCellWithReuseIdentifier: PickRoleCell.identifier)
         collectionView.delegate = self
         collectionView.dataSource = self
-        
-        collectionView.reloadData()
     }
     
 }
 
-extension RoleVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension PickRoleVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return roles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RoleCell.identifier, for: indexPath) as? RoleCell else { return UICollectionViewCell() }
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PickRoleCell.identifier, for: indexPath) as? RoleCell else { return UICollectionViewCell() }
         
         cell.role = roles[indexPath.row]
         
@@ -57,7 +47,8 @@ extension RoleVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.onRoleSelected(name: roles[indexPath.row].name)
+        guard let id = id else { return }
+        delegate?.onRoleSelected(name: roles[indexPath.row].name, withPlayer: id)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

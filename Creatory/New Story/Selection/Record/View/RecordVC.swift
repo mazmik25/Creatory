@@ -14,7 +14,7 @@ protocol RecordVCDelegate: class {
     func onDoneRecording(path: String)
 }
 
-class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+class RecordVC: UIViewController {
 
     @IBOutlet weak var nameRecorded: UILabel!
     @IBOutlet weak var tapToRecordLabel: UILabel!
@@ -25,14 +25,13 @@ class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var deleteSound: UIButton!
     @IBOutlet weak var saveSound: UIButton!
-//
+
     weak var delegate: RecordVCDelegate?
     var playerId: Int?
     var recordingSession: AVAudioSession!
     var audioRecorder: AVAudioRecorder!
     var audioPlayer: AVAudioPlayer!
     var timer: Timer?
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,13 +52,11 @@ class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate
                 DispatchQueue.main.async {
                     if allowed {
                         self.loadRecordingUI()
-                    } else {
-                        // failed to recors
                     }
                 }
             }
         } catch  {
-            //failed to record
+            print(error)
         }
         
     }
@@ -113,20 +110,8 @@ class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate
     @objc func updateLabel() {
         guard let audioRecorder = audioRecorder else { return }
         DispatchQueue.main.async {
-            self.timerLabel.text = self.stringFromTimeInterval(interval: audioRecorder.currentTime)
+            self.timerLabel.text = audioRecorder.currentTime.convertInterval()
         }
-        
-    }
-    
-    func stringFromTimeInterval(interval : TimeInterval) -> String {
-            let time = Int(interval)
-        
-            let seconds = time % 60
-            let minutes = (time / 60) % 60
-            let hours = (time / 3600)
-            
-            return String(format: "%0.2d:%0.2d:%0.2d",hours,minutes,seconds)
-            
         
     }
     
@@ -139,19 +124,19 @@ class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate
         } else {
             tapToRecordLabel.text = "Tap to Record"
             recordButton.setImage(UIImage(named: "record"), for: .normal)
-            // recording failed :(
         }
+        
+        recordButton.isEnabled = true
         playButton.isEnabled = true
         deleteSound.isEnabled = true
         saveSound.isEnabled = true
-        recordButton.isEnabled = true
     }
+    
     @IBAction func playAudioButtonTapped(_ sender: UIButton) {
         if (sender.titleLabel?.text == "Play"){
             recordButton.isEnabled = false
-            //            sender.setTitle("Stop", for: .normal)
+            sender.setTitle("Stop", for: .normal)
             sender.setImage(UIImage(named: "stop play"), for: .normal)
-            sender.setTitle("Stop Play", for: .normal)
             preparePlayer()
             audioPlayer.play()
         } else if (sender.titleLabel?.text == "Stop Play"){
@@ -161,6 +146,7 @@ class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate
             recordButton.isEnabled = true
         }
     }
+    
     func preparePlayer() {
         var error: NSError?
         do {
@@ -177,34 +163,20 @@ class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate
             audioPlayer.volume = 10.0
         }
     }
+    
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths[0]
     }
+    
     func getFileURL() -> URL {
         let path = getDocumentsDirectory().appendingPathComponent("recording.m4a")
         return path as URL
     }
-    //MARK: Delegates
     
-    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
-        if !flag {
-            finishRecording(success: false)
-        }
-    }
-    func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
-        print("Error while recording audio \(error!.localizedDescription)")
-    }
-    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
-        recordButton.isEnabled = true
-        playButton.setTitle("Play", for: .normal)
-        playButton.setImage(UIImage(named: "play"), for: .normal)
-    }
-    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
-        print("Error while playing audio \(error!.localizedDescription)")
-    }
+    
+    
     //MARK: To upload video on server
-    
     func uploadAudioToServer() {
         /*Alamofire.upload(
          multipartFormData: { multipartFormData in
@@ -255,4 +227,29 @@ class RecordVC: UIViewController, AVAudioPlayerDelegate, AVAudioRecorderDelegate
     @IBAction func onDoneRecord(_ sender: UIButton) {
         saveRecord()
     }
+}
+
+
+extension RecordVC: AVAudioPlayerDelegate, AVAudioRecorderDelegate {
+    
+    func audioRecorderDidFinishRecording(_ recorder: AVAudioRecorder, successfully flag: Bool) {
+        if !flag {
+            finishRecording(success: false)
+        }
+    }
+    
+    func audioRecorderEncodeErrorDidOccur(_ recorder: AVAudioRecorder, error: Error?) {
+        print("Error while recording audio \(error!.localizedDescription)")
+    }
+    
+    func audioPlayerDidFinishPlaying(_ player: AVAudioPlayer, successfully flag: Bool) {
+        recordButton.isEnabled = true
+        playButton.setTitle("Play", for: .normal)
+        playButton.setImage(UIImage(named: "play"), for: .normal)
+    }
+    
+    func audioPlayerDecodeErrorDidOccur(_ player: AVAudioPlayer, error: Error?) {
+        print("Error while playing audio \(error!.localizedDescription)")
+    }
+    
 }
