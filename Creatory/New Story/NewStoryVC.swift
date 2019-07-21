@@ -15,7 +15,7 @@ class NewStoryVC: BaseVC {
 
     var stickers = [StickerView]()
     var tag: Int?
-    
+    let alertservice = AlertService()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -89,6 +89,11 @@ class NewStoryVC: BaseVC {
     @IBAction func onAddPageSelected(_ sender: Any) {
         
     }
+    @IBAction func onDoneSelected(_ sender: Any) {
+        let alertVC = alertservice.alert()
+        present(alertVC, animated: true)
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
