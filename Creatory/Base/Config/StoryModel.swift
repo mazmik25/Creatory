@@ -33,7 +33,7 @@ struct StoryModel: CDConfig {
         var stories = [Story]()
         
         do {
-            stories = try context.fetch(CDModel.fetchRequest())
+            stories = try context.fetch(Story.fetchRequest())
         } catch {
             print(error)
         }

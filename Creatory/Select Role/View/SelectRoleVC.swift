@@ -53,10 +53,6 @@ class SelectRoleVC: BaseVC {
         playerTwoTF.delegate = self
     }
     
-    private func updateView() {
-        
-    }
-    
     private func addTapGestures() {
         let tapPreview = UITapGestureRecognizer(target: self, action: #selector(dismissSelection))
         let tapToHome = UITapGestureRecognizer(target: self, action: #selector(toHome))
@@ -107,7 +103,6 @@ class SelectRoleVC: BaseVC {
     @IBAction func textFieldTwoChanged(_ sender: UITextField) {
         self.namingLabel.text = sender.text ?? ""
     }
-    
     
     private func setupRolePicker(_ id: Int) {
         let vc = PickRoleVC()

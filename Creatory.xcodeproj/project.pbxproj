@@ -53,6 +53,9 @@
 		3227F27E22DD89AF00BCC591 /* LibraryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F27C22DD89AF00BCC591 /* LibraryCell.swift */; };
 		3227F27F22DD89AF00BCC591 /* LibraryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3227F27D22DD89AF00BCC591 /* LibraryCell.xib */; };
 		3227F28122DD8B6600BCC591 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */; };
+		322E2A8022E4ACF40090791F /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E2A7E22E4ACF40090791F /* AlertVC.swift */; };
+		322E2A8122E4ACF40090791F /* AlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322E2A7F22E4ACF40090791F /* AlertVC.xib */; };
+		322E2A8322E4B0350090791F /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E2A8222E4B0350090791F /* UITextField+Extension.swift */; };
 		3294124822E16B1A00EB3BB1 /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124622E16B1A00EB3BB1 /* RecordVC.swift */; };
 		3294124922E16B1A00EB3BB1 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294124722E16B1A00EB3BB1 /* RecordVC.xib */; };
 		3294124F22E17CF100EB3BB1 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124D22E17CF100EB3BB1 /* BadgeCell.swift */; };
@@ -64,12 +67,8 @@
 		32C1303122DD754E0025C69A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32C1303022DD754E0025C69A /* Assets.xcassets */; };
 		32C1303422DD754E0025C69A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32C1303222DD754E0025C69A /* LaunchScreen.storyboard */; };
 		3B3638CB22E1A5CF00A897C8 /* PreviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3638CA22E1A5CF00A897C8 /* PreviewModel.swift */; };
-		3B3638CD22E2B94200A897C8 /* PushPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3638CC22E2B94200A897C8 /* PushPreview.swift */; };
 		3B3638D222E2D9C200A897C8 /* PreviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B3638D022E2D9C200A897C8 /* PreviewCell.swift */; };
 		3B3638D322E2D9C200A897C8 /* PreviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3B3638D122E2D9C200A897C8 /* PreviewCell.xib */; };
-		3B8A4A2A22E0B241001AC739 /* AlertPopUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2922E0B241001AC739 /* AlertPopUp.storyboard */; };
-		3B8A4A2C22E0B30C001AC739 /* AlertViewPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2B22E0B30C001AC739 /* AlertViewPopUp.swift */; };
-		3B8A4A2E22E0B3EA001AC739 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2D22E0B3EA001AC739 /* AlertService.swift */; };
 		3B8A4A3022E15A69001AC739 /* PreviewAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B8A4A2F22E15A69001AC739 /* PreviewAssets.xcassets */; };
 		4E1982DE22DF250E00DF211F /* Button.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1982DD22DF250E00DF211F /* Button.xcassets */; };
 		4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1982DF22DF38BF00DF211F /* button white.xcassets */; };
@@ -126,6 +125,9 @@
 		3227F27C22DD89AF00BCC591 /* LibraryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCell.swift; sourceTree = "<group>"; };
 		3227F27D22DD89AF00BCC591 /* LibraryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LibraryCell.xib; sourceTree = "<group>"; };
 		3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		322E2A7E22E4ACF40090791F /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		322E2A7F22E4ACF40090791F /* AlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertVC.xib; sourceTree = "<group>"; };
+		322E2A8222E4B0350090791F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
 		3294124622E16B1A00EB3BB1 /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
 		3294124722E16B1A00EB3BB1 /* RecordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
 		3294124D22E17CF100EB3BB1 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
@@ -139,12 +141,8 @@
 		32C1303322DD754E0025C69A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32C1303522DD754E0025C69A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B3638CA22E1A5CF00A897C8 /* PreviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewModel.swift; sourceTree = "<group>"; };
-		3B3638CC22E2B94200A897C8 /* PushPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushPreview.swift; sourceTree = "<group>"; };
 		3B3638D022E2D9C200A897C8 /* PreviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCell.swift; sourceTree = "<group>"; };
 		3B3638D122E2D9C200A897C8 /* PreviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PreviewCell.xib; sourceTree = "<group>"; };
-		3B8A4A2922E0B241001AC739 /* AlertPopUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlertPopUp.storyboard; sourceTree = "<group>"; };
-		3B8A4A2B22E0B30C001AC739 /* AlertViewPopUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewPopUp.swift; sourceTree = "<group>"; };
-		3B8A4A2D22E0B3EA001AC739 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		3B8A4A2F22E15A69001AC739 /* PreviewAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = PreviewAssets.xcassets; sourceTree = "<group>"; };
 		3D6085C5D2D7DB028F57B2C8 /* Pods_Creatory.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Creatory.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1982DD22DF250E00DF211F /* Button.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Button.xcassets; sourceTree = "<group>"; };
@@ -179,13 +177,10 @@
 		3217DE2122DEC9920079E715 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				322E2A7B22E4ACBA0090791F /* Popup */,
 				3B3638CF22E2D97200A897C8 /* Cell */,
 				3217DE4D22DEFE390079E715 /* PreviewVC.swift */,
 				3217DE4E22DEFE390079E715 /* PreviewVC.xib */,
-				3B8A4A2922E0B241001AC739 /* AlertPopUp.storyboard */,
-				3B8A4A2B22E0B30C001AC739 /* AlertViewPopUp.swift */,
-				3B8A4A2D22E0B3EA001AC739 /* AlertService.swift */,
-				3B3638CC22E2B94200A897C8 /* PushPreview.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -399,6 +394,7 @@
 				3227F28022DD8B6600BCC591 /* UIImageView+Extension.swift */,
 				3217DE4222DEE0B10079E715 /* UIViewController+Extension.swift */,
 				321D9A5922E1F22F008C28C5 /* TimeInterval+Extension.swift */,
+				322E2A8222E4B0350090791F /* UITextField+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -464,6 +460,23 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		322E2A7A22E4ABE10090791F /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				3B8A4A2F22E15A69001AC739 /* PreviewAssets.xcassets */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		322E2A7B22E4ACBA0090791F /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				322E2A7E22E4ACF40090791F /* AlertVC.swift */,
+				322E2A7F22E4ACF40090791F /* AlertVC.xib */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
 		3294124422E16B0500EB3BB1 /* Record */ = {
 			isa = PBXGroup;
 			children = (
@@ -488,6 +501,7 @@
 				32C1302422DD754E0025C69A /* Products */,
 				E48D1DCDE05C103E2609844C /* Pods */,
 				CD87C382EF391FABCD0E4AA5 /* Frameworks */,
+				322E2A7A22E4ABE10090791F /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -502,12 +516,12 @@
 		32C1302522DD754E0025C69A /* Creatory */ = {
 			isa = PBXGroup;
 			children = (
-				3217DE2022DEC98B0079E715 /* Preview */,
 				3227F27622DD7DE000BCC591 /* Preference */,
 				3227F27322DD7D4000BCC591 /* Base */,
 				3227F26A22DD77B400BCC591 /* Library */,
 				321D9A5B22E1F486008C28C5 /* Select Role */,
 				3227F27222DD7D2E00BCC591 /* New Story */,
+				3217DE2022DEC98B0079E715 /* Preview */,
 				3227F26722DD773300BCC591 /* Extension */,
 				32C1302622DD754E0025C69A /* AppDelegate.swift */,
 				32C1303022DD754E0025C69A /* Assets.xcassets */,
@@ -625,7 +639,6 @@
 				3217DE3422DED0690079E715 /* Badge.xcassets in Resources */,
 				3217DE3222DED03E0079E715 /* Sticker.xcassets in Resources */,
 				3217DE3F22DEDCCE0079E715 /* BackgroundCell.xib in Resources */,
-				3B8A4A2A22E0B241001AC739 /* AlertPopUp.storyboard in Resources */,
 				3217DE3622DED0EF0079E715 /* Character.xcassets in Resources */,
 				321D9A8522E334DD008C28C5 /* PickRoleCell.xib in Resources */,
 				4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */,
@@ -640,6 +653,7 @@
 				3217DE5422DF2D890079E715 /* Character.xcassets in Resources */,
 				3227F27F22DD89AF00BCC591 /* LibraryCell.xib in Resources */,
 				3B8A4A3022E15A69001AC739 /* PreviewAssets.xcassets in Resources */,
+				322E2A8122E4ACF40090791F /* AlertVC.xib in Resources */,
 				3217DE5822DF2F5F0079E715 /* StickerVC.xib in Resources */,
 				3217DE3022DECF420079E715 /* Background.xcassets in Resources */,
 				321D9A6022E1F49F008C28C5 /* SelectRoleVC.xib in Resources */,
@@ -702,17 +716,16 @@
 				3217DE4622DEF0730079E715 /* RoleVC.swift in Sources */,
 				3B3638D222E2D9C200A897C8 /* PreviewCell.swift in Sources */,
 				3217DE6222E00E040079E715 /* StickerCell.swift in Sources */,
-				3B3638CD22E2B94200A897C8 /* PushPreview.swift in Sources */,
-				3B8A4A2E22E0B3EA001AC739 /* AlertService.swift in Sources */,
 				3227F27522DD7DDC00BCC591 /* Preference.swift in Sources */,
 				3217DE2D22DECA480079E715 /* OnceUponVC.swift in Sources */,
 				32C1302922DD754E0025C69A /* NewStoryVC.swift in Sources */,
 				321D9A6622E332A9008C28C5 /* BadgeModel.swift in Sources */,
-				3B8A4A2C22E0B30C001AC739 /* AlertViewPopUp.swift in Sources */,
+				322E2A8322E4B0350090791F /* UITextField+Extension.swift in Sources */,
 				3227F27122DD7C8C00BCC591 /* BaseVC.swift in Sources */,
 				321D9A8322E334DD008C28C5 /* PickRoleVC.swift in Sources */,
 				3217DE4322DEE0B10079E715 /* UIViewController+Extension.swift in Sources */,
 				32C1302F22DD754E0025C69A /* Creatory.xcdatamodeld in Sources */,
+				322E2A8022E4ACF40090791F /* AlertVC.swift in Sources */,
 				3227F26922DD773D00BCC591 /* UIView+Extension.swift in Sources */,
 				3217DE5222DF2C3A0079E715 /* Role.swift in Sources */,
 				3217DE1E22DEC75B0079E715 /* RadiusType.swift in Sources */,

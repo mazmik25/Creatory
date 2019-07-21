@@ -15,7 +15,6 @@ class NewStoryVC: BaseVC {
 
     var stickers = [StickerView]()
     var tag: Int?
-    let alertservice = AlertService()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -89,14 +88,25 @@ class NewStoryVC: BaseVC {
     @IBAction func onAddPageSelected(_ sender: Any) {
         
     }
+    
     @IBAction func onDoneSelected(_ sender: Any) {
-        let alertVC = alertservice.alert()
-        present(alertVC, animated: true)
+        setupAlert()
     }
     
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
+    private func setupAlert() {
+        let alert = UIAlertController(title: "Message", message: "Are you sure?", preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default) { (_) in
+            self.present(PreviewVC(), animated: true, completion: nil)
+        }
+        
+        let cancelButton = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
+            alert.dismiss(animated: true, completion: nil)
+        }
+        
+        alert.addAction(okButton)
+        alert.addAction(cancelButton)
+        
+        present(alert, animated: true, completion: nil)
     }
     
     func setupSticker(_ name: String) {

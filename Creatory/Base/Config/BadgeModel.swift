@@ -36,7 +36,7 @@ struct BadgeModel: CDConfig {
         var badges = [Badge]()
         
         do {
-            badges = try context.fetch(CDModel.fetchRequest())
+            badges = try context.fetch(Badge.fetchRequest())
         } catch {
             print(error)
         }
