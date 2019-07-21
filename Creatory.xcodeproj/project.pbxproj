@@ -58,6 +58,10 @@
 		4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E1982DF22DF38BF00DF211F /* button white.xcassets */; };
 		4E4F5CFD22E01CD90098C6A6 /* ButtonCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F5CFC22E01CD90098C6A6 /* ButtonCustom.swift */; };
 		4E4F5D0122E055700098C6A6 /* StickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4F5D0022E055700098C6A6 /* StickerView.swift */; };
+		4EA4BA0E22E458D300A0E4B5 /* backsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4BA0D22E458D200A0E4B5 /* backsound.mp3 */; };
+		4EA4BA1022E45ABF00A0E4B5 /* badges-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4BA0F22E45ABF00A0E4B5 /* badges-sound.wav */; };
+		4EA4BA1222E45D3D00A0E4B5 /* tap-sound-before-after-in-story-board.mpeg in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4BA1122E45D3D00A0E4B5 /* tap-sound-before-after-in-story-board.mpeg */; };
+		4EA4BA1422E45E4400A0E4B5 /* yay-congratulation.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4EA4BA1322E45E4400A0E4B5 /* yay-congratulation.wav */; };
 		A78E515CA91269A24E9B9D62 /* Pods_Creatory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D6085C5D2D7DB028F57B2C8 /* Pods_Creatory.framework */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +121,10 @@
 		4E1982DF22DF38BF00DF211F /* button white.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "button white.xcassets"; sourceTree = "<group>"; };
 		4E4F5CFC22E01CD90098C6A6 /* ButtonCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCustom.swift; sourceTree = "<group>"; };
 		4E4F5D0022E055700098C6A6 /* StickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickerView.swift; sourceTree = "<group>"; };
+		4EA4BA0D22E458D200A0E4B5 /* backsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backsound.mp3; path = ../../../../../../../Downloads/backsound.mp3; sourceTree = "<group>"; };
+		4EA4BA0F22E45ABF00A0E4B5 /* badges-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "badges-sound.wav"; path = "../../../../../../../Downloads/badges-sound.wav"; sourceTree = "<group>"; };
+		4EA4BA1122E45D3D00A0E4B5 /* tap-sound-before-after-in-story-board.mpeg */ = {isa = PBXFileReference; lastKnownFileType = video.mpeg; name = "tap-sound-before-after-in-story-board.mpeg"; path = "../../../../../../../Downloads/tap-sound-before-after-in-story-board.mpeg"; sourceTree = "<group>"; };
+		4EA4BA1322E45E4400A0E4B5 /* yay-congratulation.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "yay-congratulation.wav"; path = "../../../../../../../Downloads/yay-congratulation.wav"; sourceTree = "<group>"; };
 		71A69D6788CB0C021E3B2067 /* Pods-Creatory.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creatory.release.xcconfig"; path = "Target Support Files/Pods-Creatory/Pods-Creatory.release.xcconfig"; sourceTree = "<group>"; };
 		E931F524B0B057D49C807DD9 /* Pods-Creatory.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Creatory.debug.xcconfig"; path = "Target Support Files/Pods-Creatory/Pods-Creatory.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -405,6 +413,7 @@
 		32C1302522DD754E0025C69A /* Creatory */ = {
 			isa = PBXGroup;
 			children = (
+				4EA4BA0C22E4589E00A0E4B5 /* Sound Files */,
 				3217DE2022DEC98B0079E715 /* Preview */,
 				3227F27622DD7DE000BCC591 /* Preference */,
 				3227F27322DD7D4000BCC591 /* Base */,
@@ -425,6 +434,17 @@
 				32C1302D22DD754E0025C69A /* Creatory.xcdatamodeld */,
 			);
 			path = Creatory;
+			sourceTree = "<group>";
+		};
+		4EA4BA0C22E4589E00A0E4B5 /* Sound Files */ = {
+			isa = PBXGroup;
+			children = (
+				4EA4BA0D22E458D200A0E4B5 /* backsound.mp3 */,
+				4EA4BA1122E45D3D00A0E4B5 /* tap-sound-before-after-in-story-board.mpeg */,
+				4EA4BA1322E45E4400A0E4B5 /* yay-congratulation.wav */,
+				4EA4BA0F22E45ABF00A0E4B5 /* badges-sound.wav */,
+			);
+			path = "Sound Files";
 			sourceTree = "<group>";
 		};
 		CD87C382EF391FABCD0E4AA5 /* Frameworks */ = {
@@ -508,16 +528,20 @@
 				3294125022E17CF100EB3BB1 /* BadgeCell.xib in Resources */,
 				3217DE6322E00E040079E715 /* StickerCell.xib in Resources */,
 				3217DE3422DED0690079E715 /* Badge.xcassets in Resources */,
+				4EA4BA1022E45ABF00A0E4B5 /* badges-sound.wav in Resources */,
 				3217DE3222DED03E0079E715 /* Sticker.xcassets in Resources */,
+				4EA4BA1422E45E4400A0E4B5 /* yay-congratulation.wav in Resources */,
 				3217DE3F22DEDCCE0079E715 /* BackgroundCell.xib in Resources */,
 				3217DE3622DED0EF0079E715 /* Character.xcassets in Resources */,
 				4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */,
+				4EA4BA0E22E458D300A0E4B5 /* backsound.mp3 in Resources */,
 				32C1303422DD754E0025C69A /* LaunchScreen.storyboard in Resources */,
 				3217DE4722DEF0730079E715 /* RoleVC.xib in Resources */,
 				4E1982DE22DF250E00DF211F /* Button.xcassets in Resources */,
 				32C1303122DD754E0025C69A /* Assets.xcassets in Resources */,
 				3217DE2E22DECA480079E715 /* OnceUponVC.xib in Resources */,
 				3217DE3A22DED95C0079E715 /* BackgroundVC.xib in Resources */,
+				4EA4BA1222E45D3D00A0E4B5 /* tap-sound-before-after-in-story-board.mpeg in Resources */,
 				3294124922E16B1A00EB3BB1 /* RecordVC.xib in Resources */,
 				3217DE5022DEFE390079E715 /* PreviewVC.xib in Resources */,
 				3217DE5422DF2D890079E715 /* Character.xcassets in Resources */,
@@ -754,7 +778,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = STKR5JMBGH;
+				DEVELOPMENT_TEAM = JSB449F8V6;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -773,7 +797,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = STKR5JMBGH;
+				DEVELOPMENT_TEAM = JSB449F8V6;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
