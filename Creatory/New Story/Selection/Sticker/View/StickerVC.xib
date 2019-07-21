@@ -27,9 +27,9 @@
                     <rect key="frame" x="0.0" y="0.0" width="378" height="414"/>
                     <subviews>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="YjN-gI-bL0">
-                            <rect key="frame" x="20" y="48" width="318" height="346"/>
+                            <rect key="frame" x="40" y="60" width="278" height="324"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="30" id="L3m-hC-b9t">
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="15" minimumInteritemSpacing="15" id="L3m-hC-b9t">
                                 <size key="itemSize" width="50" height="50"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                 <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -76,12 +76,12 @@
                         <constraint firstItem="BE0-CB-UgV" firstAttribute="top" secondItem="YoF-v0-sLC" secondAttribute="top" constant="8" id="2VG-GC-CGa"/>
                         <constraint firstItem="BE0-CB-UgV" firstAttribute="centerX" secondItem="YoF-v0-sLC" secondAttribute="centerX" constant="-32" id="47M-5k-aVy"/>
                         <constraint firstItem="ael-Py-emT" firstAttribute="leading" secondItem="BE0-CB-UgV" secondAttribute="trailing" constant="16" id="A1y-j2-hGS"/>
-                        <constraint firstItem="YjN-gI-bL0" firstAttribute="top" secondItem="BE0-CB-UgV" secondAttribute="bottom" constant="8" id="Fd3-je-3ga"/>
+                        <constraint firstItem="YjN-gI-bL0" firstAttribute="top" secondItem="BE0-CB-UgV" secondAttribute="bottom" constant="20" id="Fd3-je-3ga"/>
                         <constraint firstItem="ael-Py-emT" firstAttribute="top" secondItem="YoF-v0-sLC" secondAttribute="top" constant="8" id="TGz-yy-kKL"/>
-                        <constraint firstAttribute="trailing" secondItem="YjN-gI-bL0" secondAttribute="trailing" constant="40" id="TUl-gU-znt"/>
+                        <constraint firstAttribute="trailing" secondItem="YjN-gI-bL0" secondAttribute="trailing" constant="60" id="TUl-gU-znt"/>
                         <constraint firstAttribute="width" constant="378" id="ZcZ-Q4-xDZ"/>
-                        <constraint firstAttribute="bottom" secondItem="YjN-gI-bL0" secondAttribute="bottom" constant="20" id="jx3-Of-VVt"/>
-                        <constraint firstItem="YjN-gI-bL0" firstAttribute="leading" secondItem="YoF-v0-sLC" secondAttribute="leading" constant="20" id="pkq-M1-jwH"/>
+                        <constraint firstAttribute="bottom" secondItem="YjN-gI-bL0" secondAttribute="bottom" constant="30" id="jx3-Of-VVt"/>
+                        <constraint firstItem="YjN-gI-bL0" firstAttribute="leading" secondItem="YoF-v0-sLC" secondAttribute="leading" constant="40" id="pkq-M1-jwH"/>
                     </constraints>
                 </view>
             </subviews>

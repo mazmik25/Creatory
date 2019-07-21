@@ -9,16 +9,10 @@
 import UIKit
 import AVKit
 
-protocol LibraryCellDelegate: class {
-    func onNewStory()
-    
-    func onPreviewStory(at indexPath: IndexPath)
-}
-
 class LibraryCell: UICollectionViewCell {
     
     static let identifier = "LibraryCell"
-    weak var delegate: LibraryCellDelegate?
+    @IBOutlet weak var imageView: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

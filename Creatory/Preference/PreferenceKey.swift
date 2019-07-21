@@ -9,6 +9,6 @@
 import Foundation
 
 enum PreferenceKey: String {
-    case isFirstTimeLaunch = "isFirstTimeLaunch"
+    case isFirstNotTimeLaunch = "isFirstNotTimeLaunch"
     case badgesCount = "badgesCount"
 }

@@ -19,15 +19,15 @@ class NewStoryVC: BaseVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Preference.set(value: false, forKey: .isFirstTimeLaunch)
+        Preference.set(value: true, forKey: .isFirstNotTimeLaunch)
+        viewPopup(withViewController: OnceUponVC(), withView: self.view)
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        viewPopup(withViewController: OnceUponVC(), withView: nil)
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissPopupOnTap))
-        backgroundImageView.addGestureRecognizer(tap)
+//        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissPopupOnTap))
+//        backgroundImageView.addGestureRecognizer(tap)
     }
     
     @objc func dismissPopupOnTap() {
@@ -38,7 +38,7 @@ class NewStoryVC: BaseVC {
     }
 
     @IBAction func onHomeSelected(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func onBackgroundSelected(_ sender: Any) {
@@ -66,7 +66,11 @@ class NewStoryVC: BaseVC {
     }
     
     @IBAction func onRecord1Selected(_ sender: Any) {
-        
+        let vc = RecordVC()
+        vc.delegate = self
+        vc.view.tag = 4
+        tag = 4
+        viewPopup(withViewController: vc, withView: editView)
     }
     
     @IBAction func onPlaySelected(_ sender: Any) {
@@ -123,6 +127,20 @@ extension NewStoryVC: RolesVCDelegate {
     //add role to background image view
     func onRoleSelected(name: String) {
         setupSticker(name)
+    }
+    
+}
+
+extension NewStoryVC: RecordVCDelegate {
+    
+    //bring role to front
+    func onRecording(playerId: Int) {
+        
+    }
+    
+    //dismiss background
+    func onDoneRecording(path: String) {
+        dismissPopupOnTap()
     }
     
 }

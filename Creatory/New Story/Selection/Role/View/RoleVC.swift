@@ -32,7 +32,7 @@ class RoleVC: UIViewController {
     
 }
 
-extension RoleVC: UICollectionViewDelegate, UICollectionViewDataSource {
+extension RoleVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return roles.count
     }
@@ -50,9 +50,6 @@ extension RoleVC: UICollectionViewDelegate, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 140.0, height: 80.0)
+        return CGSize(width: 130.0, height: 150.0)
     }
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return CGSize(width: 140.0, height: 80.0)
-//    }
 }

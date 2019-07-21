@@ -26,6 +26,12 @@ struct Background {
         backgrounds.append(Background(name: "abstract-2"))
         backgrounds.append(Background(name: "abstract-3"))
         backgrounds.append(Background(name: "fall"))
+        backgrounds.append(Background(name: "cloud"))
+        backgrounds.append(Background(name: "love"))
+        backgrounds.append(Background(name: "night"))
+        backgrounds.append(Background(name: "party"))
+        backgrounds.append(Background(name: "rainbow"))
+        backgrounds.append(Background(name: "yellow wave"))
         
         return backgrounds
     }
