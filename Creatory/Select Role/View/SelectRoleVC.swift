@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVKit
 
 class SelectRoleVC: BaseVC {
 
@@ -26,10 +27,16 @@ class SelectRoleVC: BaseVC {
     
     @IBOutlet weak var namingView: UIView!
     @IBOutlet weak var namingLabel: UILabel!
+    var player: AVAudioPlayer?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupView()
+        if let isPlaying = Preference.getBool(forKey: .isAudioPlaying), !isPlaying {
+            playSound("backsound")
+        }
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -91,6 +98,11 @@ class SelectRoleVC: BaseVC {
     }
 
     @IBAction func onNextTapped(_ sender: UIButton) {
+        if let player = player {
+            player.stop()
+        }
+        
+        Preference.set(value: false, forKey: .isAudioPlaying)
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let vc = sb.instantiateViewController(withIdentifier: "NewStoryVC") as! NewStoryVC
         self.present(vc, animated: true, completion: nil)
@@ -151,4 +163,25 @@ extension SelectRoleVC: UITextFieldDelegate {
         return false
     }
     
+}
+
+extension SelectRoleVC {
+    func playSound(_ name: String, withExtension of: String = ".mp3") {
+        guard let url = Bundle.main.url(forResource: name, withExtension: of) else {
+            print("url not found")
+            return
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            player?.numberOfLoops = -1
+            player!.play()
+            
+        } catch let error as NSError {
+            player = nil
+        }
+    }
 }

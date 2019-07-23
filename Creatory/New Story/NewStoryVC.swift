@@ -96,7 +96,13 @@ class NewStoryVC: BaseVC {
     private func setupAlert() {
         let alert = UIAlertController(title: "Message", message: "Are you sure?", preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Ok", style: .default) { (_) in
-            self.present(PreviewVC(), animated: true, completion: nil)
+            let vc = PreviewVC()
+            var stickers = [UIView]()
+            self.backgroundImageView.subviews.forEach({ (stickerView) in
+                stickers.append(stickerView)
+            })
+            vc.stickerViews = stickers
+            self.present(vc, animated: true, completion: nil)
         }
         
         let cancelButton = UIAlertAction(title: "Cancel", style: .destructive) { (_) in
@@ -124,6 +130,7 @@ extension NewStoryVC: BackgroundVCDelegate {
     //change background
     func onBackgroundSelected(name: String) {
         self.backgroundImageView.image = UIImage(named: name)
+        Preference.set(value: name, forKey: .background)
     }
     
 }

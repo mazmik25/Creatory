@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3204EB7422E553C3007172F3 /* backsound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3204EB7322E553C3007172F3 /* backsound.mp3 */; };
 		3217DE1E22DEC75B0079E715 /* RadiusType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE1D22DEC75B0079E715 /* RadiusType.swift */; };
 		3217DE2D22DECA480079E715 /* OnceUponVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3217DE2B22DECA480079E715 /* OnceUponVC.swift */; };
 		3217DE2E22DECA480079E715 /* OnceUponVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3217DE2C22DECA480079E715 /* OnceUponVC.xib */; };
@@ -56,6 +57,8 @@
 		322E2A8022E4ACF40090791F /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E2A7E22E4ACF40090791F /* AlertVC.swift */; };
 		322E2A8122E4ACF40090791F /* AlertVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322E2A7F22E4ACF40090791F /* AlertVC.xib */; };
 		322E2A8322E4B0350090791F /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322E2A8222E4B0350090791F /* UITextField+Extension.swift */; };
+		3235A92322E54FBC00C6FCB1 /* yay-congratulation.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3235A92122E54FBC00C6FCB1 /* yay-congratulation.wav */; };
+		3235A92422E54FBC00C6FCB1 /* badges-sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 3235A92222E54FBC00C6FCB1 /* badges-sound.wav */; };
 		3294124822E16B1A00EB3BB1 /* RecordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124622E16B1A00EB3BB1 /* RecordVC.swift */; };
 		3294124922E16B1A00EB3BB1 /* RecordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3294124722E16B1A00EB3BB1 /* RecordVC.xib */; };
 		3294124F22E17CF100EB3BB1 /* BadgeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3294124D22E17CF100EB3BB1 /* BadgeCell.swift */; };
@@ -78,6 +81,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3204EB7322E553C3007172F3 /* backsound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = backsound.mp3; path = ../../../../Downloads/backsound.mp3; sourceTree = "<group>"; };
 		3217DE1D22DEC75B0079E715 /* RadiusType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusType.swift; sourceTree = "<group>"; };
 		3217DE2B22DECA480079E715 /* OnceUponVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnceUponVC.swift; sourceTree = "<group>"; };
 		3217DE2C22DECA480079E715 /* OnceUponVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnceUponVC.xib; sourceTree = "<group>"; };
@@ -128,6 +132,8 @@
 		322E2A7E22E4ACF40090791F /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
 		322E2A7F22E4ACF40090791F /* AlertVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertVC.xib; sourceTree = "<group>"; };
 		322E2A8222E4B0350090791F /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		3235A92122E54FBC00C6FCB1 /* yay-congratulation.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "yay-congratulation.wav"; path = "../../../../Downloads/yay-congratulation.wav"; sourceTree = "<group>"; };
+		3235A92222E54FBC00C6FCB1 /* badges-sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "badges-sound.wav"; path = "../../../../Downloads/badges-sound.wav"; sourceTree = "<group>"; };
 		3294124622E16B1A00EB3BB1 /* RecordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordVC.swift; sourceTree = "<group>"; };
 		3294124722E16B1A00EB3BB1 /* RecordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordVC.xib; sourceTree = "<group>"; };
 		3294124D22E17CF100EB3BB1 /* BadgeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeCell.swift; sourceTree = "<group>"; };
@@ -477,6 +483,16 @@
 			path = Popup;
 			sourceTree = "<group>";
 		};
+		3235A92022E54F7A00C6FCB1 /* Sound File */ = {
+			isa = PBXGroup;
+			children = (
+				3235A92222E54FBC00C6FCB1 /* badges-sound.wav */,
+				3235A92122E54FBC00C6FCB1 /* yay-congratulation.wav */,
+				3204EB7322E553C3007172F3 /* backsound.mp3 */,
+			);
+			path = "Sound File";
+			sourceTree = "<group>";
+		};
 		3294124422E16B0500EB3BB1 /* Record */ = {
 			isa = PBXGroup;
 			children = (
@@ -516,6 +532,7 @@
 		32C1302522DD754E0025C69A /* Creatory */ = {
 			isa = PBXGroup;
 			children = (
+				3235A92022E54F7A00C6FCB1 /* Sound File */,
 				3227F27622DD7DE000BCC591 /* Preference */,
 				3227F27322DD7D4000BCC591 /* Base */,
 				3227F26A22DD77B400BCC591 /* Library */,
@@ -640,8 +657,10 @@
 				3217DE3222DED03E0079E715 /* Sticker.xcassets in Resources */,
 				3217DE3F22DEDCCE0079E715 /* BackgroundCell.xib in Resources */,
 				3217DE3622DED0EF0079E715 /* Character.xcassets in Resources */,
+				3235A92322E54FBC00C6FCB1 /* yay-congratulation.wav in Resources */,
 				321D9A8522E334DD008C28C5 /* PickRoleCell.xib in Resources */,
 				4E1982E022DF38BF00DF211F /* button white.xcassets in Resources */,
+				3235A92422E54FBC00C6FCB1 /* badges-sound.wav in Resources */,
 				32C1303422DD754E0025C69A /* LaunchScreen.storyboard in Resources */,
 				3217DE4722DEF0730079E715 /* RoleVC.xib in Resources */,
 				4E1982DE22DF250E00DF211F /* Button.xcassets in Resources */,
@@ -655,6 +674,7 @@
 				3B8A4A3022E15A69001AC739 /* PreviewAssets.xcassets in Resources */,
 				322E2A8122E4ACF40090791F /* AlertVC.xib in Resources */,
 				3217DE5822DF2F5F0079E715 /* StickerVC.xib in Resources */,
+				3204EB7422E553C3007172F3 /* backsound.mp3 in Resources */,
 				3217DE3022DECF420079E715 /* Background.xcassets in Resources */,
 				321D9A6022E1F49F008C28C5 /* SelectRoleVC.xib in Resources */,
 				3B3638D322E2D9C200A897C8 /* PreviewCell.xib in Resources */,
@@ -899,7 +919,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8QT8GPQG67;
+				DEVELOPMENT_TEAM = STKR5JMBGH;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -918,7 +938,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8QT8GPQG67;
+				DEVELOPMENT_TEAM = STKR5JMBGH;
 				INFOPLIST_FILE = Creatory/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

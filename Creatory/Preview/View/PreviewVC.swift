@@ -8,17 +8,19 @@
 
 import UIKit
 import SAConfettiView
+import AVKit
 
 class PreviewVC: BaseVC {
     
     //Outlets
+    @IBOutlet weak var bgView: UIImageView!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     @IBOutlet weak var badgeView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var playButton: UIButton!
     @IBOutlet weak var collectionView: UICollectionView!
-    
+    var player: AVAudioPlayer?
     
     //CoreDataEntity
     var story: Story!
@@ -26,15 +28,16 @@ class PreviewVC: BaseVC {
     
     
     //Variables
-    var titleText : String?
     var storyEntity = [Story]()
     var counting : Int?
+    var stickerViews: [UIView]?
     
     //MARK: ViewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         commonInit()
         playConfetti()
+        playSound("yay-congratulation", withExtension: ".wav")
         
         promptTitle()
     }
@@ -45,6 +48,13 @@ class PreviewVC: BaseVC {
         playButton.applyBorder(width: 2.0, color: #colorLiteral(red: 0.1529411765, green: 0.5411764706, blue: 1, alpha: 1), radius: .rounded)
         
         self.counting = Preference.getInt(forKey: .badgesCount) + 1
+        
+        guard let stickerViews = stickerViews else { return }
+        stickerViews.forEach { (view) in
+            self.bgView.addSubview(view)
+        }
+        let bg = Preference.getString(forKey: .background) ?? "white"
+        self.bgView.image = UIImage(named: bg)
     }
     
     //MARK: Play Confetti&Badge
@@ -88,6 +98,8 @@ class PreviewVC: BaseVC {
         }
         
         saveBadge()
+        playSound("backsound")
+        Preference.set(value: true, forKey: .isAudioPlaying)
 //        Preference.set(value: count, forKey: .badgesCount)
     }
     
@@ -115,8 +127,7 @@ extension PreviewVC: AlertVCDelegate, UIViewControllerTransitioningDelegate {
     }
     
     func onSave(title: String) {
-        print(title)
-        
+        titleLabel.text = title
         if let viewWithTag = view.viewWithTag(1) {
             viewWithTag.removeFromSuperview()
             removeConfetti()
@@ -133,6 +144,7 @@ extension PreviewVC: AlertVCDelegate, UIViewControllerTransitioningDelegate {
     }
     
     func showBadge() {
+        playSound("badges-sound", withExtension: ".wav")
         let bg = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height))
         bg.backgroundColor = UIColor.black.withAlphaComponent(0.25)
         bg.tag = 101
@@ -155,6 +167,30 @@ extension PreviewVC: AlertVCDelegate, UIViewControllerTransitioningDelegate {
         if let viewWithTag = self.view.viewWithTag(101) {
             viewWithTag.removeFromSuperview()
             initBadge()
+        }
+    }
+}
+
+extension PreviewVC {
+    func playSound(_ name: String, withExtension of: String = ".mp3") {
+        guard let url = Bundle.main.url(forResource: name, withExtension: of) else {
+            print("url not found")
+            return
+        }
+        
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback)
+            try AVAudioSession.sharedInstance().setActive(true)
+            
+            player = try AVAudioPlayer(contentsOf: url, fileTypeHint: AVFileType.mp3.rawValue)
+            if name.elementsEqual("backsound") {
+                player!.numberOfLoops = -1
+            }
+            player!.play()
+            
+        } catch {
+            print(error)
+            player = nil
         }
     }
 }

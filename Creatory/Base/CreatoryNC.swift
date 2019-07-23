@@ -19,7 +19,8 @@ class CreatoryNC: UINavigationController {
             viewControllers = [vc]
         } else {
             createBadges()
-            present(SelectRoleVC(), animated: true, completion: nil)
+            let vc = SelectRoleVC()
+            viewControllers = [vc]
         }
         
     }

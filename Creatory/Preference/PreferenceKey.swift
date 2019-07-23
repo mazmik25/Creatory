@@ -16,4 +16,6 @@ enum PreferenceKey: String {
     case nameTwo = "nameTwo"
     case badgesCount = "badgesCount"
     case numberOfStories = "numberOfStories"
+    case isAudioPlaying = "isAudioPlaying"
+    case background = "background"
 }

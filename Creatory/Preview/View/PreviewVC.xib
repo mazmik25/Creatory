@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PreviewVC" customModule="Creatory" customModuleProvider="target">
             <connections>
                 <outlet property="badgeView" destination="Jn6-WL-4RK" id="prS-Xb-2dU"/>
+                <outlet property="bgView" destination="qpP-Mr-dkH" id="Mzt-iJ-9g9"/>
                 <outlet property="collectionView" destination="H6U-H2-sGt" id="i7W-oy-MH2"/>
                 <outlet property="deleteButton" destination="bgC-BV-wDd" id="jca-Kc-BVr"/>
                 <outlet property="homeButton" destination="ZP0-w5-ckv" id="7yw-me-msL"/>
@@ -29,7 +30,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VN-49-g2H" userLabel="MainView">
                     <rect key="frame" x="0.0" y="0.0" width="518" height="414"/>
                     <subviews>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpP-Mr-dkH">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qpP-Mr-dkH">
                             <rect key="frame" x="0.0" y="0.0" width="517.5" height="414"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="517.5" id="Iab-c6-Pdv"/>
